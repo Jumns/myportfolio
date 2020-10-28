@@ -6,11 +6,13 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Nathan</title>
+    <title>Nathan Jumns</title>
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- icon -->
+    <link rel="icon" href="./images/Jumns-logo.png" type="image/icon-x" />
     <!-- bootstrap css -->
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
     <!-- <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" /> -->
 
     <!--   bootstrap cdn -->
@@ -43,7 +45,7 @@
         class="navbar navbar-expand-md shadow-sm navbar-dark fixed-top"
         id="navbar"
       >
-        <a href="https://imgur.com/TeUsDNj"
+        <a href="index.html"
           ><img
             src="https://i.imgur.com/TeUsDNj.png"
             title="Official Logo"
@@ -85,7 +87,7 @@
 
     <!-- landing page / about -->
     <section
-      class="container-fluid d-flex justify-content-center py-5"
+      class="container-fluid d-flex justify-content-center py-5 align-items-center"
       id="welcome-section"
     >
       <div class="row text-center align-items-center">
@@ -93,10 +95,13 @@
           <h3>
             <span class="hello">Hello!</span><span class="iam">I Am</span>
           </h3>
-          <h1 class="display-4 my-0 name">Nathan Jumns</h1>
+          <h1 class="display-4 name">Nathan Jumns</h1>
           <p class="work">A Website Developer & Graphics Designer</p>
         </div>
         <div class="col-sm-10 col-lg-7 mx-auto">
+          <div class="d-flex justify-content-center">
+            <h4 class="abt-me">Me in 10 seconds</h4>
+          </div>
           <p class="abt-txt text-light">
             Yes! I am a professional frontend Developer and a graphics designer
             at heart. I help start ups, NGOs, small agencies and businesses
@@ -106,7 +111,7 @@
           <a
             href="about.html"
             class="btn text-light"
-            style="background-color: rgba(255, 68, 0, 0.527)"
+            style="background-color: rgba(0, 255, 21, 0.726)"
             >More About Me</a
           >
         </div>
@@ -114,22 +119,25 @@
     </section>
 
     <!-- skills -->
-    <section class="d-flex justify-content-center" id="skills">
+    <section
+      class="d-flex justify-content-center align-items-center"
+      id="skills"
+    >
       <div class="container">
         <!-- heading starts -->
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12 text-center m-0">
             <h4 class="heading-shadow">my skills</h4>
           </div>
-          <div class="container pb-4 position-relative">
+          <div class="container">
             <h2 class="heading">my skills</h2>
             <p class="text-center text-capitalize">i am skilled on</p>
           </div>
         </div>
         <!-- heading ends -->
-        <div class="row">
+        <div class="row justify-content-center">
           <!-- html -->
-          <div class="col-sm-6 col-lg-3 text-center text-muted">
+          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
             <i class="fab fa-html5 awesome"></i>
             <p>
               Hypertext Markup Language is the standard markup language for
@@ -138,7 +146,7 @@
           </div>
 
           <!-- css -->
-          <div class="col-sm-6 col-lg-3 text-center text-muted">
+          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
             <i class="fab fa-css3 awesome"></i>
             <p>
               Cascading Style Sheets is a style sheet language used for
@@ -148,7 +156,7 @@
           </div>
 
           <!-- bootstrap -->
-          <div class="col-sm-6 col-lg-3 text-center text-muted">
+          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
             <i class="fab fa-bootstrap"></i>
             <p>
               Bootstrap is a free and open-source CSS framework directed at
@@ -157,24 +165,23 @@
           </div>
 
           <!-- css -->
-          <div class="col-sm-6 col-lg-3 text-center text-muted">
+          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
             <i class="fab fa-js awesome"></i>
             <p>
               JavaScript, often abbreviated as JS, is a programming language
-              that conforms to the ECMAScript specification. JavaScript is
-              high-level, often just-in-time compiled,
+              that conforms to the ECMAScript specification.
             </p>
           </div>
           <!-- git -->
-          <div class="col-sm-6 col-lg-3 text-center text-muted">
-            <i class="fab fa-git awesome"></i>
+          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
+            <i class="fab fa-git-square awesome"></i>
             <p>
               Git is a distributed version-control system for tracking changes
               in source code during software development.
             </p>
           </div>
           <!-- sass -->
-          <div class="col-sm-6 col-lg-3 text-center text-muted">
+          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
             <i class="fab fa-sass awesome"></i>
             <p>
               Sass is a preprocessor scripting language that is interpreted or
@@ -186,7 +193,7 @@
     </section>
 
     <!-- portfolio -->
-    <section class="d-flex justify-content-center" id="projects">
+    <section class="d-flex justify-content-center projects" id="projects">
       <div class="container">
         <!-- heading starts -->
 
@@ -270,7 +277,7 @@
     <!-- end of portfolio -->
 
     <!-- quick contact -->
-    <section class="py-5" id="contact">
+    <section class="py-5 bg-light" id="contact">
       <div class="container">
         <!-- heading starts -->
         <div class="row">
@@ -298,7 +305,7 @@
             </div>
             <div>
               <a
-                href="https://wa.me/8106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
+                href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
                 target="_blank"
                 ><i class="fab fa-whatsapp" title="WhatsApp"></i
               ></a>
@@ -395,7 +402,7 @@
           <div class="col">
             <p class="text-white">&copy; 2020 All rights reserverd</p>
             <p class="text-white" id="footer">
-              Desiged|Develope by:
+              Desiged|Developed by:
               <a href="#">Nathan Jumns</a>
             </p>
           </div>

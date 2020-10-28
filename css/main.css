@@ -1,11 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
 html,
 body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu Mono", monospace;
+  font-family: "Roboto Slab", serif;
   background-color: rgba(251, 251, 251, 0.5);
 }
+::selection {
+  background-color: lightblue;
+  color: white;
+}
+
+.warning {
+  position: fixed;
+  left: 0;
+  top: 80px;
+  z-index: 5555;
+  background-color: yellow;
+  padding: 0.5em 1em;
+  font-weight: bold;
+}
+
 p {
   word-break: normal;
 }
@@ -25,15 +41,12 @@ p {
 }
 
 .hello {
-  /* background-color: rgba(21, 69, 89, 0.835); */
-  /* background-color: rgb(173, 117, 11); */
-  background-color: rgba(255, 68, 0, 0.527);
+  background-color: orange;
   color: white;
   padding: 0.1rem 0.5rem;
   border-radius: 0.5rem 0 0 0.5rem;
 }
 .iam {
-  /* background-color: rgb(124, 50, 0); */
   background-color: darkcyan;
   color: white;
   padding: 0.1rem 0.5rem;
@@ -43,7 +56,27 @@ p {
 .work {
   font-size: 2em;
   color: white;
-  margin: 1em 0 0 0;
+  margin-bottom: 2.5em;
+}
+
+.abt-me {
+  background-color: rgb(39, 133, 125);
+  padding: 0.5em 1em;
+  max-width: 300px;
+  font-size: 16px;
+  margin-bottom: -20px;
+  box-shadow: 0 2px 5px white;
+  border-radius: 0.5em;
+  color: white;
+}
+
+.abt-img {
+  padding: 4em;
+}
+
+.img {
+  outline: 0.5rem solid rgba(255, 255, 255, 0.637);
+  outline-offset: -20px;
 }
 
 #welcome-section h1 {
@@ -63,7 +96,7 @@ p {
 }
 
 .card {
-  box-shadow: 2px 2px 20px lightgray;
+  box-shadow: 2px 5px 15px lightgray;
 }
 
 .fa-html5 {
@@ -90,9 +123,9 @@ p {
   margin-bottom: 0.5em;
 }
 
-.fa-git {
+.fa-git-square {
   font-size: 3em;
-  color: grey;
+  color: rgb(230, 78, 78);
   margin-bottom: 0.5em;
 }
 
@@ -102,7 +135,6 @@ p {
   margin-bottom: 0.5em;
 }
 
-.fa-map-marker,
 .fa-envelope,
 .fa-phone,
 .fa-fire,
@@ -111,6 +143,14 @@ p {
   color: #103679;
   margin-bottom: 0.5em;
   text-shadow: 0 0 10px grey;
+}
+
+.fa-map-marker {
+  color: grey;
+}
+
+.fa-check-square {
+  color: limegreen;
 }
 
 .social-media {
@@ -318,13 +358,17 @@ textarea {
   font-size: 1.5rem;
   position: absolute;
   right: 10px;
-  top: -35%;
+  top: -40px;
   box-shadow: 2px 2px 5px grey;
 }
 .date p {
   font-size: 0.8rem;
   text-transform: uppercase;
   margin: 0;
+}
+
+.projects {
+  background-color: orange !important;
 }
 
 .post-heading {
@@ -386,10 +430,10 @@ textarea {
   }
 
   .name {
-    font-size: 3rem !important;
+    font-size: 3rem;
   }
   .heading-shadow {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
     color: rgba(211, 211, 211, 0.322);
     text-transform: uppercase;
     margin-bottom: -25px;
@@ -419,7 +463,7 @@ textarea {
     font-size: 1.5rem;
   }
   .heading-shadow {
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: rgba(211, 211, 211, 0.322);
     text-transform: uppercase;
     margin-bottom: -25px;
@@ -443,8 +487,12 @@ textarea {
     font-size: 1rem;
   }
 
+  .abt-me {
+    margin-bottom: -40px;
+  }
+
   .heading-shadow {
-    font-size: 3.5rem;
+    font-size: 2.8rem;
     color: rgba(211, 211, 211, 0.322);
     text-transform: uppercase;
     margin-bottom: -25px;
@@ -476,7 +524,8 @@ textarea {
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .abt-txt {
+  .abt-txt,
+  .abt-me {
     display: none;
   }
 
@@ -486,7 +535,7 @@ textarea {
   }
 
   .name {
-    font-size: 2.5em !important;
+    font-size: 3rem !important;
   }
 
   .work {
@@ -495,7 +544,7 @@ textarea {
   }
 
   .heading-shadow {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     color: rgba(211, 211, 211, 0.322);
     text-transform: uppercase;
     margin-bottom: -25px;
@@ -510,9 +559,4 @@ textarea {
     align-items: center;
     justify-content: space-evenly;
   }
-}
-@media (max-width: 320px) {
-  /* .post {
-    width: 50px;
-  } */
 }
