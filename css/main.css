@@ -71,7 +71,7 @@ p {
 }
 
 .abt-img {
-  padding: 4em;
+  margin-bottom: 2em;
 }
 
 .img {
@@ -212,8 +212,7 @@ p {
 
 #skills {
   position: relative;
-  padding: 5em 0;
-  padding-top: 8em;
+  padding: 5em 1em;
   background: linear-gradient(
       rgba(255, 255, 255, 0.938),
       rgba(255, 255, 255, 0.904)
@@ -222,7 +221,7 @@ p {
 }
 
 #projects {
-  padding: 5em 0;
+  padding: 5em 1em;
   background: linear-gradient(
     rgba(255, 255, 255, 0.938),
     rgba(255, 255, 255, 0.904)
@@ -230,7 +229,7 @@ p {
 }
 
 #contact {
-  padding: 10em 0;
+  padding: 0em 2em;
 }
 
 .increase-form {
