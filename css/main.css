@@ -1,14 +1,36 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap");
-html,
+* {
+  font-family: "Ubuntu", sans-serif;
+}
 body {
   font-size: 16px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto Slab", serif;
+  font-family: "Itim", cursive;
   background-color: rgba(251, 251, 251, 0.5);
 }
+
+.custom-shape-divider-top-1604356726 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-top-1604356726 svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 258px;
+}
+
+.custom-shape-divider-top-1604356726 .shape-fill {
+  fill: #add8e6;
+}
+
 ::selection {
-  background-color: lightblue;
+  background-color: #add8e6;
   color: white;
 }
 
@@ -24,6 +46,15 @@ body {
 
 p {
   word-break: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Itim", cursive;
 }
 .navbar {
   background: #98b9dae5;
@@ -63,7 +94,7 @@ p {
   background-color: rgb(39, 133, 125);
   padding: 0.5em 1em;
   max-width: 300px;
-  font-size: 16px;
+  font-size: 1.2rem;
   margin-bottom: -20px;
   box-shadow: 0 2px 5px white;
   border-radius: 0.5em;
@@ -143,6 +174,16 @@ p {
   color: #103679;
   margin-bottom: 0.5em;
   text-shadow: 0 0 10px grey;
+}
+
+blockquote {
+  border-left: 5px solid #00bfff;
+  padding: 0.5em;
+  font-size: 1.3rem;
+}
+
+blockquote > small {
+  font-weight: bold;
 }
 
 .fa-check-square {
@@ -272,11 +313,10 @@ textarea {
 
 .submit input {
   border: 0.5px solid #154559dc;
-  color: #103679;
+  color: #154559dc;
   background-color: white;
   border-radius: 0.3em;
   padding: 0.7em 0;
-  color: #4831d8;
   cursor: pointer;
   width: 100%;
   font-size: 1.1em;
