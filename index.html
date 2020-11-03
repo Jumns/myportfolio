@@ -47,7 +47,7 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-md shadow-sm navbar-dark fixed-top"
+        class="navbar navbar-expand-md shadow-sm navbar-light fixed-top py-3"
         id="navbar"
       >
         <a href="index.html"
@@ -71,7 +71,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html">Home 🏠</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
@@ -129,25 +129,41 @@
     <section class="py-5 inspiration">
       <div class="container">
         <div class="row">
-          <div class="insp-img col-md-6 col-lg-7">
+          <div
+            class="insp-img col-md-6 col-lg-7 d-flex justify-content-center align-items-center"
+          >
             <img
               src="./images/undraw_programming_2svr.svg"
               alt="Nathan coding"
-              class="img-fluid"
+              class="img-fluid p-3"
             />
           </div>
-          <div class="insp-img col-md-6 col-lg-5">
-            <h3>Favorite Tech Qoutes</h3>
+          <div class="insp-img col-md-6 col-lg-5 mt-xs-5">
+            <h3 class="fav-qoutes mb-3">Favorite Tech Qoutes</h3>
             <blockquote>
-              Let's go invent tomorrow instead of worrying about what happened
-              yesterday
+              <i class="fa fa-quote-left text-secondary"></i> “The Web as I
+              envisaged it, we have not seen it yet. The future is still so much
+              bigger than the past.”.<i
+                class="fa fa-quote-right text-secondary"
+              ></i>
+              <br />
+              <small>&mdash; Tim Berners-Lee</small>
             </blockquote>
-            <small>&mdash; Steve Jobs</small>
             <blockquote>
-              The technology you use impresses no one. The experience you create
-              with it is everything.
+              <i class="fa fa-quote-left text-secondary"></i> Let's go invent
+              tomorrow instead of worrying about what happened yesterday.<i
+                class="fa fa-quote-right text-secondary"
+              >
+              </i
+              ><br />
+              <small>&mdash; Steve Jobs</small>
             </blockquote>
-            <small>&mdash; Sean Gerety</small>
+            <blockquote>
+              <i class="fa fa-quote-left text-secondary"></i> The technology you
+              use impresses no one. The experience you create with it is
+              everything.<i class="fa fa-quote-right text-secondary"></i> <br />
+              <small>&mdash; Sean Gerety</small>
+            </blockquote>
           </div>
         </div>
       </div>
@@ -166,13 +182,18 @@
           </div>
           <div class="container mb-5">
             <h2 class="heading">my skills</h2>
-            <p class="text-center text-capitalize">i am skilled on</p>
+            <p class="text-center text-capitalize">
+              <i class="fa fa-circle"></i> i am skilled at
+            </p>
           </div>
         </div>
         <!-- heading ends -->
         <div class="row justify-content-center">
           <!-- html -->
-          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
+          <div
+            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+          >
+            <div class="on"></div>
             <i class="fab fa-html5 awesome"></i>
             <p>
               Hypertext Markup Language is the standard markup language for
@@ -181,7 +202,10 @@
           </div>
 
           <!-- css -->
-          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
+          <div
+            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+          >
+            <div class="on"></div>
             <i class="fab fa-css3 awesome"></i>
             <p>
               Cascading Style Sheets is a style sheet language used for
@@ -191,7 +215,10 @@
           </div>
 
           <!-- bootstrap -->
-          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
+          <div
+            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+          >
+            <div class="on"></div>
             <i class="fab fa-bootstrap"></i>
             <p>
               Bootstrap is a free and open-source CSS framework directed at
@@ -200,7 +227,10 @@
           </div>
 
           <!-- css -->
-          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
+          <div
+            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+          >
+            <div class="on"></div>
             <i class="fab fa-js awesome"></i>
             <p>
               JavaScript, often abbreviated as JS, is a programming language
@@ -208,7 +238,10 @@
             </p>
           </div>
           <!-- git -->
-          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
+          <div
+            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+          >
+            <div class="on"></div>
             <i class="fab fa-git-square awesome"></i>
             <p>
               Git is a distributed version-control system for tracking changes
@@ -216,7 +249,10 @@
             </p>
           </div>
           <!-- sass -->
-          <div class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted">
+          <div
+            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+          >
+            <div class="on"></div>
             <i class="fab fa-sass awesome"></i>
             <p>
               Sass is a preprocessor scripting language that is interpreted or
@@ -238,7 +274,9 @@
           </div>
           <div class="container position-relative mb-5">
             <h2 class="heading-1 project-title">portfolio</h2>
-            <p class="text-center text-capitalize">most recent projects</p>
+            <p class="text-center text-capitalize">
+              <i class="fa fa-circle"></i> most recent projects
+            </p>
           </div>
         </div>
         <!-- heading ends -->
@@ -258,8 +296,11 @@
                 <p class="text-white text-01">
                   Nathan College Group of Schools
                 </p>
-                <a href="" class="btn btn-outline-info visit-site"
-                  >Visit Website <i class="fa fa-link"></i
+                <a
+                  href="https://jumns.github.io/Nathan-College/"
+                  class="btn btn-outline-info visit-site"
+                  target="_blank"
+                  >View Project <i class="fa fa-link"></i
                 ></a>
               </div>
             </div>
@@ -270,17 +311,18 @@
             <div class="container-0">
               <div class="">
                 <img
-                  src="./images/Tech-Doc.png"
+                  src="./images/MyDayLike.png"
                   class="card-img-top img-fluid"
-                  alt="..."
+                  alt="A todo app"
                 />
               </div>
               <div class="overlay-01 overlayLeft">
-                <p class="text-white text-01">
-                  A tech Documentation (static) website.
-                </p>
-                <a href="" class="btn btn-outline-info visit-site"
-                  >Visit Website <i class="fa fa-link"></i
+                <p class="text-white text-01">A todo app I named "MyDayLike"</p>
+                <a
+                  href="https://jumns.github.io/MyDayLike/"
+                  class="btn btn-outline-info visit-site"
+                  target="_blank"
+                  >View Project <i class="fa fa-link"></i
                 ></a>
               </div>
             </div>
@@ -300,8 +342,11 @@
                 <p class="text-white text-01">
                   An Agro e-commerce frontend website
                 </p>
-                <a href="" class="btn btn-outline-info visit-site"
-                  >Visit Website <i class="fa fa-link"></i
+                <a
+                  href="https://jumns.github.io/Farmers-World/"
+                  target="_blank"
+                  class="btn btn-outline-info visit-site"
+                  >View Project <i class="fa fa-link"></i
                 ></a>
               </div>
             </div>
@@ -321,7 +366,9 @@
           </div>
           <div class="container mb-4 position-relative">
             <h2 class="heading-2">Contact</h2>
-            <p class="text-center text-capitalize">Let's Connect</p>
+            <p class="text-center text-capitalize">
+              <i class="fa fa-circle"></i> Let's Connect
+            </p>
           </div>
         </div>
       </div>
@@ -403,9 +450,9 @@
             <div class="col- text-center d-flex mb-4">
               <div><i class="fa fa-envelope"></i></div>
               <div class="text-left ml-3">
-                <h5>Emails</h5>
+                <h5>Email</h5>
                 <p class="text-muted">
-                  isjonathaniel@gmail.com <br />
+                  heisnathan@outlook.com <br />
                   Send me your query anytime!
                 </p>
               </div>

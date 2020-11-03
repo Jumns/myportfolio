@@ -34,12 +34,23 @@
       integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
       crossorigin="anonymous"
     />
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-    <header>
+    <header class="bloq">
       <nav
-        class="navbar navbar-expand-md shadow-sm navbar-dark fixed-top animated bounce"
+        class="navbar navbar-expand-md shadow-sm navbar-light fixed-top py-3"
         id="navbar"
       >
         <a href="index.html"
@@ -69,7 +80,7 @@
               <a class="nav-link" href="about.html">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog📰</a>
+              <a class="nav-link" href="blog.html">Blog 📰</a>
             </li>
           </ul>
         </div>
@@ -87,7 +98,9 @@
             <h2 class="heading-1" style="text-decoration: none">
               study time! <i class="far fa-clock text-info"></i>
             </h2>
-            <p class="text-center text-capitalize">No knowledge is a waste</p>
+            <p class="text-center text-capitalize">
+              <i class="fa fa-circle"></i> No knowledge is a waste
+            </p>
           </div>
           <div class="col-md-4">
             <form
@@ -254,11 +267,11 @@
       </div>
     </section>
     <!-- footer  section-->
-    <footer class="py-3" style="background: rgba(21, 69, 90, 0.555)">
+    <section class="py-3 footer">
       <div class="container">
         <div class="row text-center">
           <div class="col">
-            <p class="text-white">&copy;Nathan 2020</p>
+            <p class="text-white">&copy; 2020 All rights reserverd</p>
             <p class="text-white" id="footer">
               <i class="fa fa-code"></i> By:
               <a
@@ -270,7 +283,7 @@
           </div>
         </div>
       </div>
-    </footer>
+    </section>
     <!-- end of footer -->
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

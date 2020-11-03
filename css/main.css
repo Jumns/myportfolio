@@ -9,6 +9,15 @@ body {
   background-color: rgba(251, 251, 251, 0.5);
 }
 
+.logo {
+  width: 160px;
+}
+
+.card-bg:hover {
+  background-color: #9dbcdb38;
+  transition: all 400ms ease-in-out;
+}
+
 .custom-shape-divider-top-1604356726 {
   position: absolute;
   top: 0;
@@ -38,7 +47,7 @@ body {
   position: fixed;
   left: 0;
   top: 80px;
-  z-index: 5555;
+  z-index: 1;
   background-color: yellow;
   padding: 0.5em 1em;
   font-weight: bold;
@@ -113,7 +122,21 @@ h6 {
 #welcome-section h1 {
   font-weight: bolder;
   color: white;
-  /* font-family: "Courgette", cursive; */
+}
+
+.on {
+  width: 35px;
+  height: 35px;
+  border: 2px solid #154559dc;
+  background-color: #98b9da;
+  border-radius: 50%;
+  position: absolute;
+  top: -10px;
+  left: -10px;
+}
+
+.on:hover {
+  background: white;
 }
 
 .abt-txt {
@@ -166,6 +189,16 @@ h6 {
   margin-bottom: 0.5em;
 }
 
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 14px;
+}
+
+.fa-circle {
+  font-size: 10px;
+  color: lime;
+}
+
 .fa-envelope,
 .fa-phone,
 .fa-fire,
@@ -178,8 +211,10 @@ h6 {
 
 blockquote {
   border-left: 5px solid #00bfff;
+  background-color: #98b9da28;
   padding: 0.5em;
   font-size: 1.3rem;
+  margin-bottom: 0;
 }
 
 blockquote > small {
@@ -451,11 +486,6 @@ textarea {
 
 /* END OF TAGS */
 
-/* ARTICLE */
-.first-letter::first-letter {
-  font-size: 1rem;
-}
-/* END OF ARTICLE */
 /* MEDIA QUERIES */
 
 /* // Large devices (desktops, 992px and up) */
@@ -478,10 +508,6 @@ textarea {
     font-size: 1.6em;
     color: white;
   }
-
-  .logo {
-    width: 190px;
-  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -502,10 +528,6 @@ textarea {
     color: rgba(211, 211, 211, 0.322);
     text-transform: uppercase;
     margin-bottom: -25px;
-  }
-
-  .logo {
-    width: 160px;
   }
 
   .social-media {
@@ -546,10 +568,6 @@ textarea {
     font-size: 1.1rem;
   }
 
-  .logo {
-    width: 160px;
-  }
-
   .social-media {
     flex-direction: row;
     align-items: center;
@@ -559,6 +577,10 @@ textarea {
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
+  .fav-qoutes {
+    margin-top: 0.5em;
+  }
+
   .abt-txt,
   .abt-me {
     display: none;
