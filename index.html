@@ -13,7 +13,14 @@
     <link rel="icon" href="./images/Jumns-logo.png" type="image/icon-x" />
     <!-- bootstrap css -->
     <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
-    <!-- <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" /> -->
+
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- animate.css cdn -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    /> -->
 
     <!--   bootstrap cdn -->
     <link
@@ -47,7 +54,7 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-md shadow-sm navbar-light fixed-top py-3"
+        class="navbar navbar-expand-md shadow-sm fixed-top navbar-light py-3"
         id="navbar"
       >
         <a href="index.html"
@@ -56,6 +63,7 @@
             title="Official Logo"
             alt=""
             class="logo"
+            data-aos="zoom-out"
         /></a>
         <button
           class="navbar-toggler"
@@ -71,22 +79,30 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home 🏠</a>
+              <a class="nav-link" href="index.html" data-aos="fade-down"
+                >Home 🏠</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
+              <a class="nav-link" href="about.html" data-aos="fade-down"
+                >About</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
+              <a class="nav-link" href="#skills" data-aos="fade-down">Skills</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#projects">Portfolio</a>
+              <a class="nav-link" href="#projects" data-aos="fade-down"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact" data-aos="fade-down"
+                >Contact</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="blog.html" data-aos="fade-down">Blog</a>
             </li>
           </ul>
         </div>
@@ -100,17 +116,19 @@
     >
       <div class="row text-center align-items-center">
         <div class="col-lg-12 mt-5">
-          <h3>
+          <h3 data-aos="fade-down">
             <span class="hello">Hello!</span><span class="iam">I Am</span>
           </h3>
-          <h1 class="display-4 name">Nathan Jonah</h1>
-          <p class="work">A Website Developer & Graphics Designer</p>
+          <h1 class="display-4 name" data-aos="fade-left">Nathan Jonah</h1>
+          <p class="work" data-aos="fade-right">
+            A Website Developer & Graphics Designer
+          </p>
         </div>
         <div class="col-sm-10 col-lg-7 mx-auto">
-          <div class="d-flex justify-content-center">
-            <h4 class="abt-me">Me in 10 seconds</h4>
+          <div class="d-flex justify-content-center align-items-center">
+            <h4 class="abt-me" data-aos="flip-down">Me in 10 seconds</h4>
           </div>
-          <p class="abt-txt text-light">
+          <p class="abt-txt text-light" data-aos="fade-down">
             Yes! I am a professional frontend Developer and a graphics designer
             at heart. I help start ups, NGOs, small agencies and businesses
             bring their ideas to live.
@@ -126,7 +144,7 @@
       </div>
     </section>
 
-    <section class="py-5 inspiration">
+    <section class="py-5 inspiration" data-aos="zoom-in">
       <div class="container">
         <div class="row">
           <div
@@ -138,7 +156,9 @@
               class="img-fluid p-3"
             />
           </div>
-          <div class="insp-img col-md-6 col-lg-5 mt-xs-5">
+          <div
+            class="insp-img col-md-6 col-lg-5 mt-xs-5 animate__animated animate__bounce"
+          >
             <h3 class="fav-qoutes mb-3">Favorite Tech Qoutes</h3>
             <blockquote>
               <i class="fa fa-quote-left text-secondary"></i> “The Web as I
@@ -178,10 +198,10 @@
         <!-- heading starts -->
         <div class="row">
           <div class="col-lg-12 text-center m-0">
-            <h4 class="heading-shadow">my skills</h4>
+            <h4 class="heading-shadow" data-aos="flip-right">my skills</h4>
           </div>
           <div class="container mb-5">
-            <h2 class="heading">my skills</h2>
+            <h2 class="heading" data-aos="flip-right">my skills</h2>
             <p class="text-center text-capitalize">
               <i class="fa fa-circle"></i> i am skilled at
             </p>
@@ -192,6 +212,7 @@
           <!-- html -->
           <div
             class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+            data-aos="zoom-out"
           >
             <div class="on"></div>
             <i class="fab fa-html5 awesome"></i>
@@ -204,6 +225,7 @@
           <!-- css -->
           <div
             class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+            data-aos="zoom-out"
           >
             <div class="on"></div>
             <i class="fab fa-css3 awesome"></i>
@@ -217,6 +239,7 @@
           <!-- bootstrap -->
           <div
             class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+            data-aos="zoom-out"
           >
             <div class="on"></div>
             <i class="fab fa-bootstrap"></i>
@@ -229,6 +252,7 @@
           <!-- css -->
           <div
             class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+            data-aos="zoom-out"
           >
             <div class="on"></div>
             <i class="fab fa-js awesome"></i>
@@ -240,6 +264,7 @@
           <!-- git -->
           <div
             class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+            data-aos="zoom-out"
           >
             <div class="on"></div>
             <i class="fab fa-git-square awesome"></i>
@@ -251,6 +276,7 @@
           <!-- sass -->
           <div
             class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+            data-aos="zoom-out"
           >
             <div class="on"></div>
             <i class="fab fa-sass awesome"></i>
@@ -270,10 +296,12 @@
 
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h4 class="heading-shadow">portfolio</h4>
+            <h4 class="heading-shadow" data-aos="flip-right">portfolio</h4>
           </div>
           <div class="container position-relative mb-5">
-            <h2 class="heading-1 project-title">portfolio</h2>
+            <h2 class="heading-1 project-title" data-aos="flip-right">
+              portfolio
+            </h2>
             <p class="text-center text-capitalize">
               <i class="fa fa-circle"></i> most recent projects
             </p>
@@ -284,7 +312,7 @@
           <!-- farm -->
           <div class="col-lg-4 text-center mt-5">
             <!-- school -->
-            <div class="container-0">
+            <div class="container-0" data-aos="fade-up">
               <div class="">
                 <img
                   src="./images/Nath-college.png"
@@ -306,7 +334,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 text-center mt-5">
+          <div class="col-lg-4 text-center mt-5" data-aos="fade-up">
             <!-- school -->
             <div class="container-0">
               <div class="">
@@ -328,7 +356,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 text-center mt-5">
+          <div class="col-lg-4 text-center mt-5" data-aos="fade-up">
             <!-- school -->
             <div class="container-0">
               <div class="">
@@ -357,15 +385,15 @@
     <!-- end of portfolio -->
 
     <!-- quick contact -->
-    <section class="py-5 px-1 bg-light" id="contact">
+    <section class="px-1 bg-light" id="contact">
       <div class="container">
         <!-- heading starts -->
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h4 class="heading-shadow">Contact</h4>
+            <h4 class="heading-shadow" data-aos="flip-right">Contact</h4>
           </div>
           <div class="container mb-4 position-relative">
-            <h2 class="heading-2">Contact</h2>
+            <h2 class="heading-2" data-aos="flip-right">Contact</h2>
             <p class="text-center text-capitalize">
               <i class="fa fa-circle"></i> Let's Connect
             </p>
@@ -376,11 +404,10 @@
     <!-- end of quick contact -->
 
     <!-- form section-->
-    <!-- form section-->
     <section class="py-5 bg-light">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-1 mb-4 social-media">
+          <div class="col-lg-1 mb-4 social-media" data-aos="fade-up">
             <div>
               <a href="https://twitter.com/Mr_Jumns" target="_blank"
                 ><i class="fab fa-twitter" title="Twitter"></i
@@ -454,7 +481,7 @@
               </div>
             </form>
           </div>
-          <div class="col-lg-4 p-4 mb-4">
+          <div class="col-lg-4 p-4 mb-4" data-aos="fade-up">
             <!-- email -->
             <div class="col- text-center d-flex mb-4">
               <div><i class="fa fa-envelope"></i></div>
@@ -508,6 +535,15 @@
 
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        animatedClassName: "aos-animate",
+        initClassName: "aos-init",
+        easing: " linear",
+      });
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>

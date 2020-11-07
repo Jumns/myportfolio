@@ -14,7 +14,8 @@
     <!-- icon -->
     <link rel="icon" href="./images/Jumns-logo.png" type="image/icon-x" />
     <!-- <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" /> -->
-
+    <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <!--   bootstrap cdn -->
     <link
       rel="stylesheet"
@@ -62,6 +63,7 @@
             title="Official Logo"
             alt=""
             class="logo"
+            data-aos="zoom-out"
         /></a>
         <button
           class="navbar-toggler"
@@ -77,20 +79,24 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
+              <a class="nav-link" href="index.html" data-aos="fade-down"
+                >Home</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="about.html">About 🤓</a>
+              <a class="nav-link" href="about.html" data-aos="fade-down"
+                >About 🤓</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
+              <a class="nav-link" href="blog.html" data-aos="fade-down">Blog</a>
             </li>
           </ul>
         </div>
       </nav>
     </header>
 
-    <!-- quick contact -->
+    <!-- about -->
     <section class="py-3 mt-5 bg-light" id="contact">
       <div class="custom-shape-divider-top-1604356726">
         <svg
@@ -119,10 +125,10 @@
         <!-- heading starts -->
         <div class="row">
           <div class="col-lg-12 text-center mt-5">
-            <h4 class="heading-shadow">About Me!</h4>
+            <h4 class="heading-shadow" data-aos="flip-right">About Me!</h4>
           </div>
           <div class="container pb-4 position-relative">
-            <h2 class="heading">About Me!</h2>
+            <h2 class="heading" data-aos="flip-right">About Me!</h2>
             <p class="text-center"><i class="fa fa-circle"></i> Know Me Now!</p>
           </div>
         </div>
@@ -133,15 +139,21 @@
     <section class="abt-img">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 col-md-6 mb-2 col-sm-10 mt-md-3">
+          <div
+            class="col-lg-4 col-md-6 mb-2 col-sm-10 mt-md-3"
+            data-aos="fade-up"
+          >
             <img
               src="images/Nath.jpg"
-              class="img-fluid img"
+              class="img-fluid img mx-auto"
               alt="Nathan Jumns"
             />
           </div>
 
-          <div class="col col-lg-4 col-md-6 col-sm-10 mt-0 mb-2 mt-md-3">
+          <div
+            class="col col-lg-4 col-md-6 col-sm-10 mt-0 mb-2 mt-md-3"
+            data-aos="fade-up"
+          >
             <h2>Who Am I? 🤓</h2>
             <p>
               Hi, I am Nathan Jonah, a 24 year old frontend developer & a
@@ -160,7 +172,7 @@
             </p>
           </div>
 
-          <div class="col-lg-4 col-md-12 mt-md-3">
+          <div class="col-lg-4 col-md-12 mt-md-3" data-aos="fade-up">
             <h2>Qualities <i class="fa fa-circle"></i>💎</h2>
             <ul class="list-group list-group-flush">
               <li class="list-group-item bg-light">
@@ -189,7 +201,7 @@
       </div>
     </section>
 
-    <div class="container pb-5">
+    <div class="container pb-5" data-aos="fade-right">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-6">
           <span>
@@ -210,10 +222,10 @@
         <!-- heading starts -->
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h4 class="heading-shadow">Contact</h4>
+            <h4 class="heading-shadow" data-aos="flip-right">Contact</h4>
           </div>
           <div class="container pb-4 position-relative">
-            <h2 class="heading-2">Contact</h2>
+            <h2 class="heading-2" data-aos="flip-right">Contact</h2>
             <p class="text-center text-capitalize">
               <i class="fa fa-circle"></i> Let's Connect
             </p>
@@ -227,7 +239,7 @@
     <section class="py-5 bg-light">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-1 mb-4 social-media">
+          <div class="col-lg-1 mb-4 social-media" data-aos="fade-up">
             <div>
               <a href="https://twitter.com/Mr_Jumns" target="_blank"
                 ><i class="fab fa-twitter" title="Twitter"></i
@@ -301,7 +313,7 @@
               </div>
             </form>
           </div>
-          <div class="col-lg-4 p-4 mb-4">
+          <div class="col-lg-4 p-4 mb-4" data-aos="fade-down">
             <!-- email -->
             <div class="col- text-center d-flex mb-4">
               <div><i class="fa fa-envelope"></i></div>
@@ -354,6 +366,15 @@
     <!-- end of footer -->
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1200,
+        animatedClassName: "aos-animate",
+        initClassName: "aos-init",
+        easing: "linear",
+      });
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>
