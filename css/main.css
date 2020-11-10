@@ -206,6 +206,12 @@ h6 {
   margin-bottom: 0.5em;
 }
 
+.fa-wordpress {
+  font-size: 3em;
+  color: rgb(34, 113, 216);
+  margin-bottom: 0.5em;
+}
+
 .fa-quote-left,
 .fa-quote-right {
   font-size: 14px;
