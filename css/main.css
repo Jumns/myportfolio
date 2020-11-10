@@ -370,8 +370,9 @@ textarea {
 
 .submit input {
   border: 0.5px solid #154559dc;
-  color: #154559dc;
-  background-color: white;
+  color: #fff;
+  transition: all linear 400ms;
+  background-color: #154559dc;
   border-radius: 0.3em;
   padding: 0.7em 0;
   cursor: pointer;
@@ -380,10 +381,8 @@ textarea {
 }
 
 .submit input:hover {
-  border: 0.5px solid #154559dc;
-  color: #fff;
-  transition: all linear 400ms;
-  background-color: #154559dc;
+  color: #154559dc;
+  background-color: white;
 }
 
 #footer a {
