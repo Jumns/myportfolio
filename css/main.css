@@ -15,6 +15,7 @@ body {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 /**
@@ -34,6 +35,8 @@ html {
   background-color: #9dbcdb38;
   transition: all 400ms ease-in-out;
 }
+
+/* custom shape divider */
 
 .custom-shape-divider-top-1604356726 {
   position: absolute;
@@ -55,11 +58,14 @@ html {
   fill: #add8e6;
 }
 
+/* end of custom svg shape */
+
 ::selection {
   background-color: #add8e6;
   color: white;
 }
 
+/* warning on blog "blog under construction" */
 .warning {
   position: fixed;
   left: 0;
@@ -69,6 +75,8 @@ html {
   padding: 0.5em 1em;
   font-weight: bold;
 }
+
+/* tags style */
 
 p {
   word-break: normal;
@@ -82,6 +90,10 @@ h5,
 h6 {
   font-family: "Itim", cursive;
 }
+
+/* end of tags style */
+
+/* nav */
 .navbar {
   background: #98b9dae5;
 }
@@ -90,6 +102,9 @@ h6 {
   color: white !important;
 }
 
+/* end of nav */
+
+/* landing page */
 #welcome-section {
   background: linear-gradient(rgba(21, 69, 89, 0.835), rgba(21, 69, 89, 0.863)),
     url(https://i.imgur.com/oDGrvyc.jpg) center/cover no-repeat;
@@ -116,6 +131,15 @@ h6 {
   margin-bottom: 2.5em;
 }
 
+#welcome-section h1 {
+  font-weight: bolder;
+  color: white;
+}
+
+/* end of landing page */
+
+/* about  */
+
 .abt-me {
   background-color: rgb(39, 133, 125);
   padding: 0.5em 1em;
@@ -136,10 +160,17 @@ h6 {
   outline-offset: -20px;
 }
 
-#welcome-section h1 {
-  font-weight: bolder;
+.abt-txt {
+  color: rgb(58, 58, 58);
+  background-color: #98b9dab7;
   color: white;
+  border-radius: 1em;
+  padding: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.7;
 }
+
+/* end of about */
 
 .on {
   width: 35px;
@@ -156,20 +187,10 @@ h6 {
   background: white;
 }
 
-.abt-txt {
-  color: rgb(58, 58, 58);
-  background-color: #98b9dab7;
-  color: white;
-  border-radius: 1em;
-  padding: 1.5em;
-  font-size: 1.1em;
-  line-height: 1.7;
-}
-
 .card {
   box-shadow: 2px 5px 15px lightgray;
 }
-
+/* skills */
 .fa-html5 {
   font-size: 3em;
   color: orangered;
@@ -212,48 +233,19 @@ h6 {
   margin-bottom: 0.5em;
 }
 
-.fa-quote-left,
-.fa-quote-right {
-  font-size: 14px;
+#skills {
+  position: relative;
+  padding: 5em 1em;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.938),
+      rgba(255, 255, 255, 0.904)
+    ),
+    url(https://i.imgur.com/peNe86I.jpg) center/cover no-repeat;
 }
 
-.fa-circle {
-  font-size: 10px;
-  color: lime;
-}
+/* end of skills */
 
-.fa-envelope,
-.fa-phone,
-.fa-fire,
-.fa-tag {
-  font-size: 1.5em;
-  color: #103679;
-  margin-bottom: 0.5em;
-  text-shadow: 0 0 10px grey;
-}
-
-blockquote {
-  border-left: 5px solid #00bfff;
-  background-color: #98b9da28;
-  padding: 1em;
-  font-size: 1.3rem;
-  margin-bottom: 0;
-}
-
-blockquote > small {
-  font-weight: bold;
-}
-
-.fa-check-square {
-  color: limegreen;
-}
-
-.social-media {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/* fontawesome icons */
 
 .fa-twitter,
 .fa-whatsapp,
@@ -280,6 +272,52 @@ blockquote > small {
   margin: 0;
 }
 
+.fa-quote-left,
+.fa-quote-right {
+  font-size: 14px;
+}
+
+.fa-circle {
+  font-size: 10px;
+  color: lime;
+}
+
+.fa-envelope,
+.fa-phone,
+.fa-fire,
+.fa-tag {
+  font-size: 1.5em;
+  color: #103679;
+  margin-bottom: 0.5em;
+  text-shadow: 0 0 10px grey;
+}
+
+.fa-check-square {
+  color: limegreen;
+}
+
+/* end of fontawesome icons */
+
+blockquote {
+  border-left: 5px solid #00bfff;
+  background-color: #98b9da28;
+  padding: 1em;
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+blockquote > small {
+  font-weight: bold;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* headings */
 .heading,
 .heading-1,
 .heading-2 {
@@ -309,16 +347,9 @@ blockquote > small {
   margin-bottom: -25px;
 }
 
-#skills {
-  position: relative;
-  padding: 5em 1em;
-  background: linear-gradient(
-      rgba(255, 255, 255, 0.938),
-      rgba(255, 255, 255, 0.904)
-    ),
-    url(https://i.imgur.com/peNe86I.jpg) center/cover no-repeat;
-}
+/* end of headings */
 
+/* portfolio */
 #projects {
   padding: 5em 1em;
   background: linear-gradient(
@@ -331,6 +362,9 @@ blockquote > small {
   background-size: cover;
 }
 
+/* end of portfolio */
+
+/* contact */
 #contact {
   padding: 5em 1em;
   /* scroll-margin-top: 1em; */
@@ -391,12 +425,18 @@ textarea {
   background-color: white;
 }
 
+/* end of contact */
+
+/* footer */
+
 #footer a {
   color: rgb(255, 245, 105);
 }
 .footer {
   background-color: #154559dc;
 }
+
+/* end of footer */
 
 /* overlay */
 .container-0 {
