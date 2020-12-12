@@ -12,7 +12,7 @@
     <!-- animate.css -->
     <link rel="stylesheet" href="./css/animate.css" />
     <!-- icon -->
-    <link rel="icon" href="./images/Jumns-logo.png" type="image/icon-x" />
+    <link rel="icon" href="./images/J-logo.png" type="image/icon-x" />
     <!-- aos cdn -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="./aos/aos.css" />
@@ -36,12 +36,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
-      rel="stylesheet"
-    />
-
+    <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Itim&family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
@@ -51,76 +46,50 @@
   <body>
     <header class="bloq">
       <nav
-        class="navbar navbar-expand-md shadow-sm navbar-light fixed-top py-3"
-        id="navbar"
+        class="fixed-top d-flex justify-content-between align-items-center"
+        id="nav"
       >
         <a href="index.html"
           ><img
-            src="https://i.imgur.com/TeUsDNj.png"
+            src="./images/logo.svg"
             title="Official Logo"
-            alt=""
+            alt="Nath Logo"
             class="logo"
             data-aos="zoom-out"
         /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="index.html"
-                data-aos="fade-down"
-                data-aos-delay="500"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="about.html"
-                data-aos="fade-down"
-                data-aos-delay="500"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="blog.html"
-                data-aos="fade-down"
-                data-aos-delay="500"
-                >Blog 📰</a
-              >
-            </li>
+
+        <div id="menu_btn" class="menu_btn ml-auto">
+          <img src="./images/icon-hamburger.svg" alt="" />
+        </div>
+        <div class="" id="navbar">
+          <ul class="navbar-list" id="navbar-list">
+            <li><a href="index.html">🏠 Home </a></li>
+            <li><a href="about.html">🤓 About </a></li>
+            <li><a class="active-page" href="blog.html">📰 Blog </a></li>
           </ul>
         </div>
+        <a
+          class="hire-btn"
+          href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
+          target="_blank"
+          >Hire Me <i class="fa fa-exclamation"></i
+        ></a>
       </nav>
     </header>
-    <div class="col" data-aos="fade-up" data-aos-delay="350">
-      <p class="warning">
-        <i class="fa fa-info-circle"></i> Blog Under Construction
-      </p>
-    </div>
+
     <section
-      class="py-4 position-relative bg-light"
+      class="py-4 position-relative"
       data-aos="fade-down"
       data-aos-delay="450"
     >
       <div class="container blog-heading">
         <div class="row align-items-center">
+          <!-- <div class="col-lg-6">
+            <img src="./images/bloq.svg" class="img-fluid" alt="" />
+          </div> -->
           <div class="col-md-4">
-            <h2 class="heading-1" style="text-decoration: none">
-              study time! <i class="far fa-clock text-info"></i>
+            <h2 class="heading-1">
+              coming soon! <i class="far fa-clock text-info"></i>
             </h2>
             <p class="text-center text-capitalize">
               <i class="fa fa-circle"></i> No knowledge is a waste
@@ -130,7 +99,7 @@
             <form
               action=""
               class="d-flex justify-content-end align-items-center bg-white p-2"
-              style="border: 1px solid skyblue"
+              style="border: 1px solid var(--secondary_)"
             >
               <input
                 type="search"
@@ -176,10 +145,10 @@
     <!-- end of head -->
 
     <!-- tags -->
-    <section class="bg-light" data-aos="fade-left" data-aos-delay="600">
+    <section class="" data-aos="fade-left" data-aos-delay="600">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
+          <div class="col-lg-12 mt-4">
             <ul class="list-unstyled d-flex justify-content-center flex-wrap">
               <a href="#" class="tag html"><li>#HTML</li></a>
               <a href="#" class="tag css"><li>#CSS</li></a>
@@ -304,11 +273,10 @@
       </div>
     </section>
     <!-- footer  section-->
-    <section class="py-3 footer">
+    <section class="py-5 footer">
       <div class="container">
         <div class="row text-center">
           <div class="col">
-            <p class="text-white">&copy; 2020 All rights reserverd</p>
             <p class="text-white" id="footer">
               <i class="fa fa-code"></i> By:
               <a
@@ -317,6 +285,7 @@
                 >Nathan Jumns</a
               >
             </p>
+            <p class="copy">&copy; 2020 All rights reserved</p>
           </div>
         </div>
       </div>

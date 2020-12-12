@@ -10,18 +10,19 @@
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- icon -->
-    <link rel="icon" href="./images/Jumns-logo.png" type="image/icon-x" />
+    <link rel="icon" href="./images/J-logo.png" type="image/icon-x" />
     <!-- bootstrap css -->
     <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
 
     <!-- aos cdn -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
     <link rel="stylesheet" href="./aos/aos.css" />
+
     <!-- animate.css cdn -->
-    <!-- <link
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    /> -->
+    />
 
     <!--   bootstrap cdn -->
     <link
@@ -40,12 +41,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
-      rel="stylesheet"
-    />
-
+    <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Itim&family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
@@ -53,88 +49,39 @@
   </head>
 
   <body>
-    <header class="">
+    <header>
       <nav
-        class="navbar navbar-expand-md shadow-sm fixed-top navbar-light py-3"
-        id="navbar"
+        class="fixed-top d-flex justify-content-between align-items-center"
+        id="nav"
       >
         <a href="index.html"
           ><img
-            src="https://i.imgur.com/TeUsDNj.png"
+            src="./images/logo.svg"
             title="Official Logo"
-            alt=""
+            alt="Nath Logo"
             class="logo"
             data-aos="zoom-out"
         /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="index.html"
-                data-aos="fade-down"
-                data-aos-delay="400"
-                >Home 🏠</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="about.html"
-                data-aos="fade-down"
-                data-aos-delay="400"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#skills"
-                data-aos="fade-down"
-                data-aos-delay="400"
-                >Skills</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#projects"
-                data-aos="fade-down"
-                data-aos-delay="400"
-                >Portfolio</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#contact"
-                data-aos="fade-down"
-                data-aos-delay="400"
-                >Contact</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                href="blog.html"
-                data-aos="fade-down"
-                data-aos-delay="400"
-                >Blog</a
-              >
-            </li>
+
+        <div id="menu_btn" class="menu_btn ml-auto">
+          <img src="./images/icon-hamburger.svg" alt="" />
+        </div>
+        <div class="" id="navbar">
+          <ul class="navbar-list" id="navbar-list">
+            <li><a class="active-page" href="index.html"> 🏠 Home </a></li>
+            <li><a href="about.html"> 🤓 About </a></li>
+            <li><a href="#skills">💻 Skills </a></li>
+            <li><a href="#projects"> 📂 Portfolio </a></li>
+            <li><a href="#contact"> 🤝🏽 Connect </a></li>
+            <li><a href="blog.html"> 📰 Blog </a></li>
           </ul>
         </div>
+        <a
+          class="hire-btn"
+          href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
+          target="_blank"
+          >Hire Me <i class="fa fa-exclamation"></i
+        ></a>
       </nav>
     </header>
 
@@ -144,13 +91,13 @@
       id="welcome-section"
     >
       <div class="row text-center align-items-center">
-        <div class="col-lg-12 mt-5">
+        <div class="col-lg-12 mt-3">
           <h3 data-aos="fade-down" data-aos-delay="350">
-            <span class="hello">Hello!</span><span class="iam">I Am</span>
+            <span class="hello">Hello!,</span><span class="iam">Meet</span>
           </h3>
           <h1 class="display-4 name" data-aos="fade-left">Nathan Jonah</h1>
           <p class="work" data-aos="fade-right" data-aos-delay="500">
-            A Website Developer & Graphics Designer
+            A Website Developer & Graphic Designer.
           </p>
         </div>
         <div
@@ -159,7 +106,7 @@
           data-aos-delay="650"
         >
           <div class="d-flex justify-content-center align-items-center">
-            <h4 class="abt-me">Me in 10 seconds</h4>
+            <h4 class="abt-me">Me in 10s</h4>
           </div>
           <p class="abt-txt text-light">
             Yes! I am a professional frontend Developer and a graphics designer
@@ -175,6 +122,12 @@
           >
         </div>
       </div>
+      <img
+        class="scroll"
+        src="./images/scroll.png"
+        alt=""
+        title="scroll down"
+      />
     </section>
 
     <section class="py-5 inspiration" data-aos="zoom-in" data-aos-delay="500">
@@ -184,7 +137,7 @@
             class="insp-img col-md-6 col-lg-7 d-flex justify-content-center align-items-center"
           >
             <img
-              src="./images/undraw_programming_2svr.svg"
+              src="./images/programming.svg"
               alt="Nathan coding"
               class="img-fluid p-3"
             />
@@ -221,7 +174,6 @@
         </div>
       </div>
     </section>
-
     <!-- skills -->
     <section
       class="d-flex justify-content-center align-items-center"
@@ -229,113 +181,119 @@
     >
       <div class="container">
         <!-- heading starts -->
-        <div class="row">
-          <div class="col-lg-12 text-center m-0">
-            <h4 class="heading-shadow" data-aos="zoom-in">my skills</h4>
-          </div>
-          <div class="container mb-5">
-            <h2 class="heading" data-aos="zoom-in">my skills</h2>
-            <p class="text-center text-capitalize">
-              <i class="fa fa-circle"></i> i am skilled at
-            </p>
-          </div>
-        </div>
-        <!-- heading ends -->
-        <div class="row justify-content-center">
-          <!-- html -->
-          <div
-            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
-            data-aos="fade-down"
-            data-aos-delay="300"
-          >
-            <div class="on"></div>
-            <i class="fab fa-html5 awesome"></i>
-            <p>
-              Hypertext Markup Language is the standard markup language for
-              documents designed to be displayed in a web browser.
-            </p>
-          </div>
+        <div class="container">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-lg-6 text-center m-0">
+              <div class="container mb-5">
+                <h4 class="heading-shadow" data-aos="zoom-in">my skills</h4>
+                <h2 class="heading" data-aos="zoom-in">my skills</h2>
+                <p class="text-center text-capitalize">
+                  <i class="fa fa-circle"></i> i am skilled at
+                </p>
+              </div>
+            </div>
 
-          <!-- css -->
-          <div
-            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
-            data-aos="fade-down"
-            data-aos-delay="400"
-          >
-            <div class="on"></div>
-            <i class="fab fa-css3 awesome"></i>
-            <p>
-              Cascading Style Sheets is a style sheet language used for
-              describing the presentation of a document written in a markup
-              language such as HTML
-            </p>
+            <div class="col-lg-6">
+              <img src="./images/skilllls.svg" class="img-fluid" alt="" />
+            </div>
           </div>
+          <!-- heading ends -->
+          <div class="row justify-content-center">
+            <!-- html -->
+            <div
+              class="col-sm-4 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="on"></div>
+              <i class="fab fa-html5 awesome"></i>
+              <p class="hide-mobile">
+                Hypertext Markup Language is the standard markup language for
+                documents designed to be displayed in a web browser.
+              </p>
+            </div>
 
-          <!-- bootstrap -->
-          <div
-            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
-            data-aos="fade-down"
-            data-aos-delay="500"
-          >
-            <div class="on"></div>
-            <i class="fab fa-bootstrap"></i>
-            <p>
-              Bootstrap is a free and open-source CSS framework directed at
-              responsive, mobile-first front-end web development.
-            </p>
-          </div>
+            <!-- css -->
+            <div
+              class="col-sm-4 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+              data-aos="fade-down"
+              data-aos-delay="400"
+            >
+              <div class="on"></div>
+              <i class="fab fa-css3 awesome"></i>
+              <p class="hide-mobile">
+                Cascading Style Sheets is a style sheet language used for
+                describing the presentation of a document written in a markup
+                language such as HTML
+              </p>
+            </div>
 
-          <!-- css -->
-          <div
-            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
-            data-aos="fade-down"
-            data-aos-delay="300"
-          >
-            <div class="on"></div>
-            <i class="fab fa-js awesome"></i>
-            <p>
-              JavaScript, often abbreviated as JS, is a programming language
-              that conforms to the ECMAScript specification.
-            </p>
-          </div>
-          <!-- git -->
-          <div
-            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
-            data-aos="fade-down"
-            data-aos-delay="400"
-          >
-            <div class="on"></div>
-            <i class="fab fa-git-square awesome"></i>
-            <p>
-              Git is a distributed version-control system for tracking changes
-              in source code during software development.
-            </p>
-          </div>
-          <!-- sass -->
-          <div
-            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
-            data-aos="fade-down"
-            data-aos-delay="500"
-          >
-            <div class="on"></div>
-            <i class="fab fa-sass awesome"></i>
-            <p>
-              Sass is a preprocessor scripting language that is interpreted or
-              compiled into Cascading Style Sheets.
-            </p>
-          </div>
-          <!-- wordpress -->
-          <div
-            class="col-sm-6 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
-            data-aos="fade-down"
-            data-aos-delay="500"
-          >
-            <div class="on"></div>
-            <i class="fab fa-wordpress awesome"></i>
-            <p>
-              WordPress is a free and open-source content management system
-              written in PHP and paired with a MySQL or MariaDB database.
-            </p>
+            <!-- bootstrap -->
+            <div
+              class="col-sm-4 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+              data-aos="fade-down"
+              data-aos-delay="500"
+            >
+              <div class="on"></div>
+              <i class="fab fa-bootstrap"></i>
+              <p class="hide-mobile">
+                Bootstrap is a free and open-source CSS framework directed at
+                responsive, mobile-first front-end web development.
+              </p>
+            </div>
+
+            <!-- css -->
+            <div
+              class="col-sm-4 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+              data-aos="fade-down"
+              data-aos-delay="300"
+            >
+              <div class="on"></div>
+              <i class="fab fa-js awesome"></i>
+              <p class="hide-mobile">
+                JavaScript, often abbreviated as JS, is a programming language
+                that conforms to the ECMAScript specification.
+              </p>
+            </div>
+            <!-- git -->
+            <div
+              class="col-sm-4 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+              data-aos="fade-down"
+              data-aos-delay="400"
+            >
+              <div class="on"></div>
+              <i class="fab fa-git-square awesome"></i>
+              <p class="hide-mobile">
+                Git is a distributed version-control system for tracking changes
+                in source code during software development.
+              </p>
+            </div>
+            <!-- sass -->
+            <div
+              class="col-sm-4 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+              data-aos="fade-down"
+              data-aos-delay="500"
+            >
+              <div class="on"></div>
+              <i class="fab fa-sass awesome"></i>
+              <p class="hide-mobile">
+                Sass is a preprocessor scripting language that is interpreted or
+                compiled into Cascading Style Sheets.
+              </p>
+            </div>
+            <!-- wordpress -->
+            <div
+              class="col-sm-4 card p-3 m-2 col-lg-3 text-center text-muted position-relative card-bg"
+              data-aos="fade-down"
+              data-aos-delay="500"
+            >
+              <div class="on"></div>
+              <i class="fab fa-wordpress awesome"></i>
+              <p class="hide-mobile">
+                WordPress is a free and open-source content management system
+                written in PHP and paired with a MySQL or MariaDB database.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -346,17 +304,20 @@
       <div class="container">
         <!-- heading starts -->
 
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h4 class="heading-shadow" data-aos="zoom-in">portfolio</h4>
+        <div class="row align-items-center justify-content-center">
+          <div class="col-lg-6">
+            <img src="./images/portfolio.svg" class="img-fluid" alt="" />
           </div>
-          <div class="container position-relative mb-5">
-            <h2 class="heading-1 project-title" data-aos="zoom-in">
-              portfolio
-            </h2>
-            <p class="text-center text-capitalize">
-              <i class="fa fa-circle"></i> most recent projects
-            </p>
+          <div class="col-lg-6 text-center">
+            <h4 class="heading-shadow" data-aos="zoom-in">portfolio</h4>
+            <div class="container position-relative mb-5">
+              <h2 class="heading-1 project-title" data-aos="zoom-in">
+                portfolio
+              </h2>
+              <p class="text-center text-capitalize">
+                <i class="fa fa-circle"></i> most recent projects
+              </p>
+            </div>
           </div>
         </div>
         <!-- heading ends -->
@@ -377,7 +338,7 @@
                 </p>
                 <a
                   href="https://jumns.github.io/Nathan-College/"
-                  class="btn btn-outline-info visit-site"
+                  class="btn btn-outline-secondary visit-site"
                   target="_blank"
                   >View Project <i class="fa fa-link"></i
                 ></a>
@@ -405,7 +366,7 @@
                 <p class="text-white text-01">A todo app I named "MyDayLike"</p>
                 <a
                   href="https://jumns.github.io/MyDayLike/"
-                  class="btn btn-outline-info visit-site"
+                  class="btn btn-outline-secondary visit-site"
                   target="_blank"
                   >View Project <i class="fa fa-link"></i
                 ></a>
@@ -434,7 +395,7 @@
                 <a
                   href="https://jumns.github.io/Farmers-World/"
                   target="_blank"
-                  class="btn btn-outline-info visit-site"
+                  class="btn btn-outline-secondary visit-site"
                   >View Project <i class="fa fa-link"></i
                 ></a>
               </div>
@@ -446,18 +407,21 @@
     <!-- end of portfolio -->
 
     <!-- quick contact -->
-    <section class="px-1 bg-light" id="contact">
-      <div class="container">
+    <section class="px-1" id="contact">
+      <div class="container py-5 mb-3">
         <!-- heading starts -->
-        <div class="row">
-          <div class="col-lg-12 text-center">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center">
             <h4 class="heading-shadow" data-aos="zoom-in">Contact</h4>
+            <div class="container mb-4 position-relative">
+              <h2 class="heading-2" data-aos="zoom-in">Contact</h2>
+              <p class="text-center text-capitalize">
+                <i class="fa fa-circle"></i> Let's Connect
+              </p>
+            </div>
           </div>
-          <div class="container mb-4 position-relative">
-            <h2 class="heading-2" data-aos="zoom-in">Contact</h2>
-            <p class="text-center text-capitalize">
-              <i class="fa fa-circle"></i> Let's Connect
-            </p>
+          <div class="col-lg-6">
+            <img src="./images/contact.svg" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
@@ -514,7 +478,7 @@
                     name="email"
                     type="email"
                     class="email increase-form"
-                    placeholder="Enter email e.g you@domain.com"
+                    placeholder="you@domain.com"
                     required
                   />
                 </div>
@@ -584,11 +548,10 @@
     <!-- end of form section -->
 
     <!-- footer  section-->
-    <section class="py-3 footer">
+    <section class="py-5 footer">
       <div class="container">
         <div class="row text-center">
           <div class="col">
-            <p class="text-white">&copy; 2020 All rights reserverd</p>
             <p class="text-white" id="footer">
               <i class="fa fa-code"></i> By:
               <a
@@ -597,6 +560,7 @@
                 >Nathan Jumns</a
               >
             </p>
+            <p class="copy">&copy; 2020 All rights reserved</p>
           </div>
         </div>
       </div>

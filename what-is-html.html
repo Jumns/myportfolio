@@ -12,7 +12,7 @@
     <!-- animate.css -->
     <link rel="stylesheet" href="./css/animate.css" />
     <!-- icon -->
-    <link rel="icon" href="./images/Jumns-logo.png" type="image/icon-x" />
+    <link rel="icon" href="./images/J-logo.png" type="image/icon-x" />
     <!-- bootstrap css -->
     <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
     <!-- <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" /> -->
@@ -35,12 +35,7 @@
       crossorigin="anonymous"
     />
 
-    <!-- fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
-      rel="stylesheet"
-    />
-
+    <!-- font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Itim&family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
@@ -50,49 +45,34 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-md shadow-sm navbar-light fixed-top py-3"
-        id="navbar"
+        class="fixed-top d-flex justify-content-between align-items-center"
+        id="nav"
       >
         <a href="index.html"
           ><img
-            src="https://i.imgur.com/TeUsDNj.png"
+            src="./images/logo.svg"
             title="Official Logo"
-            alt=""
+            alt="Nath Logo"
             class="logo"
+            data-aos="zoom-out"
         /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#projects">Portfolio</a>
-            </li> -->
-            <!-- <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li> -->
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html">Blog</a>
-            </li>
+
+        <div id="menu_btn" class="menu_btn ml-auto">
+          <img src="./images/icon-hamburger.svg" alt="" />
+        </div>
+        <div class="" id="navbar">
+          <ul class="navbar-list" id="navbar-list">
+            <li><a href="index.html">🏠 Home </a></li>
+            <li><a href="about.html">🤓 About </a></li>
+            <li><a href="blog.html">📰 Blog </a></li>
           </ul>
         </div>
+        <a
+          class="hire-btn"
+          href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
+          target="_blank"
+          >Hire Me <i class="fa fa-exclamation"></i
+        ></a>
       </nav>
     </header>
     <section class="py-4 position-relative bg-light">
@@ -163,7 +143,7 @@
               &nbsp;
               <a href="blog.html" class=""><li>Blog /</li></a
               >&nbsp;
-              <a href="#" class=""><li>what is html</li></a>
+              <a href="what-is-html.html" class=""><li>what is html</li></a>
             </ul>
           </div>
         </div>
@@ -206,14 +186,17 @@
               voluptas eos.
             </p>
           </div>
-          <div class="col-lg-4 bg-light" style="background-color: #98b9da28">
-            <div class="col-lg-12 p-4 mb-4" style="background-color: #98b9da28">
+          <div class="col-lg-4 bg-light">
+            <div class="col-lg-12 p-4 mb-4 aside-tag">
               <h5
                 class="text-dark d-flex align-items-center justify-content-between"
               >
                 <p>Tags</p>
 
-                <i class="fa fa-tag" style="font-size: initial"></i>
+                <i
+                  class="fa fa-tag"
+                  style="font-size: initial; color: var(--tertiary_)"
+                ></i>
               </h5>
               <hr />
               <ul
@@ -228,7 +211,7 @@
             <!-- end of tags -->
 
             <!-- popular post -->
-            <div class="col-lg-12 p-4 mb-4" style="background-color: #98b9da28">
+            <div class="col-lg-12 p-4 mb-4 post-aside">
               <h5
                 class="text-dark d-flex align-items-center justify-content-between"
               >
@@ -284,8 +267,9 @@
                 </li>
               </ul>
             </div>
+
             <!-- subscribe -->
-            <div class="col-lg-12 p-4" style="background-color: #98b9da28">
+            <div class="col-lg-12 p-4 sub-aside">
               <h5
                 class="text-dark d-flex align-items-center justify-content-between"
               >
@@ -304,7 +288,7 @@
                   type="submit"
                   value="SUBSCRIBE"
                   class="btn btn-block text-white"
-                  style="background: #98b9dae5"
+                  style="background: var(--tertiary_)"
                 />
               </form>
             </div>
@@ -313,11 +297,10 @@
       </div>
     </section>
     <!-- footer  section-->
-    <footer class="py-3" style="background: rgba(21, 69, 90, 0.555)">
+    <section class="py-5 footer">
       <div class="container">
         <div class="row text-center">
           <div class="col">
-            <p class="text-white">&copy;Nathan 2020</p>
             <p class="text-white" id="footer">
               <i class="fa fa-code"></i> By:
               <a
@@ -326,10 +309,11 @@
                 >Nathan Jumns</a
               >
             </p>
+            <p class="copy">&copy; 2020 All rights reserved</p>
           </div>
         </div>
       </div>
-    </footer>
+    </section>
     <!-- end of footer -->
     <script src="./js/jquery.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>

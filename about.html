@@ -12,7 +12,7 @@
     <!-- bootstrap css -->
     <!-- <link rel="stylesheet" href="./css/bootstrap.min.css" /> -->
     <!-- icon -->
-    <link rel="icon" href="./images/Jumns-logo.png" type="image/icon-x" />
+    <link rel="icon" href="./images/J-logo.png" type="image/icon-x" />
     <!-- <link rel="stylesheet" href="./css/bootstrap-reboot.min.css" /> -->
     <!-- aos cdn -->
     <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
@@ -40,12 +40,6 @@
       rel="stylesheet"
     />
 
-    <!-- fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Itim&display=swap"
-      rel="stylesheet"
-    />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Itim&family=Ubuntu:wght@300&display=swap"
       rel="stylesheet"
@@ -55,104 +49,76 @@
   <body>
     <header>
       <nav
-        class="navbar navbar-expand-md shadow-sm navbar-light fixed-top py-3"
-        id="navbar"
+        class="fixed-top d-flex justify-content-between align-items-center"
+        id="nav"
       >
         <a href="index.html"
           ><img
-            src="https://i.imgur.com/TeUsDNj.png"
+            src="./images/logo.svg"
             title="Official Logo"
-            alt=""
+            alt="Nath Logo"
             class="logo"
             data-aos="zoom-out"
         /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html" data-aos="fade-down"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html" data-aos="fade-down"
-                >About 🤓</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog.html" data-aos="fade-down">Blog</a>
-            </li>
+
+        <div id="menu_btn" class="menu_btn ml-auto">
+          <img src="./images/icon-hamburger.svg" alt="" />
+        </div>
+        <div class="" id="navbar">
+          <ul class="navbar-list" id="navbar-list">
+            <li><a href="index.html">🏠 Home </a></li>
+            <li><a class="active-page" href="about.html">🤓 About </a></li>
+            <li><a href="#contact">🤝🏽 Connect </a></li>
+            <li><a href="blog.html">📰 Blog </a></li>
           </ul>
         </div>
+        <a
+          class="hire-btn"
+          href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
+          target="_blank"
+          >Hire Me <i class="fa fa-exclamation"></i
+        ></a>
       </nav>
     </header>
 
     <!-- about -->
-    <section class="py-3 mt-5 bg-light" id="contact">
-      <div class="custom-shape-divider-top-1604356726">
-        <svg
-          data-name="Layer 1"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
-            opacity=".25"
-            class="shape-fill"
-          ></path>
-          <path
-            d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
-            opacity=".5"
-            class="shape-fill"
-          ></path>
-          <path
-            d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
-            class="shape-fill"
-          ></path>
-        </svg>
-      </div>
-      <div class="container">
-        <!-- heading starts -->
-        <div class="row">
-          <div class="col-lg-12 text-center mt-5">
+
+    <section class="abt-img py-5 mt-5">
+      <div class="container mb-5">
+        <div class="row align-items-center">
+          <div class="col-lg-6">
+            <img src="./images/about-me.svg" class="img-fluid" alt="" />
+          </div>
+          <div class="col-lg-6 text-center mt-5 py-3">
             <h4 class="heading-shadow" data-aos="zoom-in" data-aos-delay="500">
               About Me!
             </h4>
-          </div>
-          <div class="container pb-4 position-relative">
-            <h2 class="heading" data-aos="zoom-in" data-aos-delay="500">
-              About Me!
-            </h2>
-            <p class="text-center"><i class="fa fa-circle"></i> Know Me Now!</p>
+
+            <div class="container pb-4 position-relative">
+              <h2 class="heading" data-aos="zoom-in" data-aos-delay="500">
+                About Me!
+              </h2>
+              <p class="text-center">
+                <i class="fa fa-circle"></i> Know Me Now!
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </section>
 
-    <section class="abt-img">
       <div class="container">
         <div class="row">
           <div
-            class="col-lg-4 col-md-6 mb-2 col-sm-10 mt-md-3"
+            class="col-lg-4 col-md-6 col-sm-12 my-4"
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <img
-              src="images/Nath.jpg"
-              class="img-fluid img mx-auto"
-              alt="Nathan Jumns"
-            />
+            <a href="./images/Jnath.jpg">
+              <img
+                src="images/jnath.jpg"
+                class="img-fluid img mx-auto"
+                alt="Nathan Jumns"
+            /></a>
           </div>
 
           <div
@@ -163,18 +129,23 @@
             <h2>Who Am I? 🤓</h2>
             <p>
               Hi, I am Nathan Jonah, a 24 year old frontend developer & a
-              graphic designer from <i class="fa fa-map-marker"></i> Lagos,
+              graphic designer from <i class="fa fa-map-marker"></i>
               Nigeria, West Africa.
             </p>
             <p>
-              My journey to web development was triggered by my experience in
-              graphic design. I started writing code about 2 years ago and i've
-              learned a lot in the tech industry and i'm very much ready to
-              explore it.
+              I've learned (and still learning) and understood most of the
+              technologies that this profession requires, I've also explored(and
+              still exploring) it in different projects, personally, via
+              collaborations and contribution to open source softwares (OSS).
+              I'm pretty creative too, I promise.
             </p>
             <p>
               I write and speak English fluently and I am emotionally
               intellegent, working with me will be fun and a lot productive.
+            </p>
+            <p>
+              What more could you look for in a professional website and app
+              developer? Send me that email before i'm taken away in a jiffy.
             </p>
           </div>
 
@@ -211,14 +182,15 @@
       </div>
     </section>
 
-    <div class="container pb-5" data-aos="fade-right" data-aos-delay="550">
+    <div class="container mb-5" data-aos="fade-right" data-aos-delay="550">
       <div class="row d-flex justify-content-center align-items-center">
         <div class="col-lg-6">
           <span>
             <a
               href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
               target="_blank"
-              class="text-white btn btn-success btn-block py-3"
+              class="text-white btn btn-block py-3"
+              style="background-color: var(--tertiary_)"
               >HIRE ME <i class="fa fa-paper-plane"></i></a
           ></span>
         </div>
@@ -299,7 +271,7 @@
                     name="email"
                     type="email"
                     class="email increase-form"
-                    placeholder="Enter email e.g you@domain.com"
+                    placeholder="you@domain.com"
                     required
                   />
                 </div>
@@ -369,11 +341,10 @@
     <!-- end of form section -->
 
     <!-- footer  section-->
-    <section class="py-3 footer">
+    <section class="py-5 footer">
       <div class="container">
         <div class="row text-center">
           <div class="col">
-            <p class="text-white">&copy; 2020 All rights reserverd</p>
             <p class="text-white" id="footer">
               <i class="fa fa-code"></i> By:
               <a
@@ -382,6 +353,7 @@
                 >Nathan Jumns</a
               >
             </p>
+            <p class="copy">&copy; 2020 All rights reserved</p>
           </div>
         </div>
       </div>
