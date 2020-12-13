@@ -6,7 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Nathan Jumns</title>
+    <meta
+      name="description"
+      content="Nathan Jonah is a highly skilled professional Frontend Developer. He is passionate about bringing complicated layouts to live on the browser. "
+    />
+    <meta name="robots" content="index, follow" />
+    <!--===================  end of meta tags =============== -->
+
+    <title>Nathan Jonah &mdash; Frontend Developer</title>
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- icon -->
@@ -19,10 +26,10 @@
     <link rel="stylesheet" href="./aos/aos.css" />
 
     <!-- animate.css cdn -->
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
+    /> -->
 
     <!--   bootstrap cdn -->
     <link
@@ -31,6 +38,8 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <!-- fontawesome cdn -->
     <!-- <link rel="stylesheet" href="fontawesome/css/all.css" /> -->
 
@@ -67,21 +76,26 @@
           <img src="./images/icon-hamburger.svg" alt="" />
         </div>
         <div class="" id="navbar">
-          <ul class="navbar-list" id="navbar-list">
-            <li><a class="active-page" href="index.html"> 🏠 Home </a></li>
-            <li><a href="about.html"> 🤓 About </a></li>
-            <li><a href="#skills">💻 Skills </a></li>
-            <li><a href="#projects"> 📂 Portfolio </a></li>
-            <li><a href="#contact"> 🤝🏽 Connect </a></li>
-            <li><a href="blog.html"> 📰 Blog </a></li>
+          <ul class="navbar-list animation" id="navbar-list">
+            <li>
+              <a class="active-page hide-nav" href="index.html">🏠 Home </a>
+            </li>
+            <li><a class="about" href="about.html"> About </a></li>
+            <li><a class="skills" href="#skills"> Skills </a></li>
+            <li><a class="portfolio" href="#projects"> Portfolio </a></li>
+            <li><a class="connect" href="#contact"> Connect </a></li>
+            <li><a class="blog" href="blog.html"> Blog </a></li>
           </ul>
         </div>
-        <a
-          class="hire-btn"
-          href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
-          target="_blank"
-          >Hire Me <i class="fa fa-exclamation"></i
-        ></a>
+        <!-- hire btn -->
+        <div>
+          <a
+            class="hire-btn"
+            href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
+            target="_blank"
+            >Hire Me <i class="fa fa-exclamation"></i
+          ></a>
+        </div>
       </nav>
     </header>
 
@@ -91,14 +105,15 @@
       id="welcome-section"
     >
       <div class="row text-center align-items-center">
-        <div class="col-lg-12 mt-3">
+        <div class="col-lg-12 mt-1">
           <h3 data-aos="fade-down" data-aos-delay="350">
-            <span class="hello">Hello!,</span><span class="iam">Meet</span>
+            <span class="hello">Hello<i class="fa fa-exclamation"></i>,</span
+            ><span class="iam">Meet</span>
           </h3>
           <h1 class="display-4 name" data-aos="fade-left">Nathan Jonah</h1>
-          <p class="work" data-aos="fade-right" data-aos-delay="500">
+          <h2 class="work" data-aos="fade-right" data-aos-delay="500">
             A Website Developer & Graphic Designer.
-          </p>
+          </h2>
         </div>
         <div
           class="col-sm-10 col-lg-7 mx-auto"
@@ -109,7 +124,7 @@
             <h4 class="abt-me">Me in 10s</h4>
           </div>
           <p class="abt-txt text-light">
-            Yes! I am a professional frontend Developer and a graphics designer
+            Yes! I am a professional frontend Developer and a graphic designer
             at heart. I help start ups, NGOs, small agencies and businesses
             bring their ideas to live.
             <br />
@@ -145,7 +160,7 @@
           <div
             class="insp-img col-md-6 col-lg-5 mt-xs-5 animate__animated animate__bounce"
           >
-            <h3 class="fav-qoutes mb-3">Favorite Tech Qoutes</h3>
+            <h4 class="fav-qoutes mb-3">Some Favorite Tech Qoutes</h4>
             <blockquote data-aos="fade-right" data-aos-delay="250">
               <i class="fa fa-quote-left text-secondary"></i> “The Web as I
               envisaged it, we have not seen it yet. The future is still so much
@@ -304,7 +319,7 @@
       <div class="container">
         <!-- heading starts -->
 
-        <div class="row align-items-center justify-content-center">
+        <div class="row align-items-center justify-content-center reverse py-3">
           <div class="col-lg-6">
             <img src="./images/portfolio.svg" class="img-fluid" alt="" />
           </div>
@@ -557,8 +572,8 @@
               <a
                 href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
                 target="_blank"
-                >Nathan Jumns</a
-              >
+                >Nathan Jonah
+              </a>
             </p>
             <p class="copy">&copy; 2020 All rights reserved</p>
           </div>

@@ -5,11 +5,11 @@ window.addEventListener("DOMContentLoaded", function () {
 
   $(function () {
     AOS.init({
-      duration: 1200,
+      duration: 900,
       animatedClassName: "aos-animate",
       once: true,
       initClassName: "aos-init",
-      easing: " linear",
+      easing: " ease-in-out",
     });
   });
 
@@ -19,7 +19,6 @@ window.addEventListener("DOMContentLoaded", function () {
   const iconImg = menuBtn.querySelector("img");
   const navBar = document.getElementById("navbar-list");
 
-  console.log(iconImg.src);
   let openMenu = false;
 
   menuBtn.addEventListener("click", () => {
@@ -27,16 +26,36 @@ window.addEventListener("DOMContentLoaded", function () {
       navBar.style.visibility = "visible";
       document.body.classList.add("overlay");
       iconImg.src = "images/icon-close.svg";
-      navBar.classList.add("animate__animated", "animate__fadeInLeft");
+      navBar.classList.add("open");
 
       openMenu = true;
     } else {
       navBar.style.visibility = "hidden";
       document.body.classList.remove("overlay");
       iconImg.src = "images/icon-hamburger.svg";
-      navBar.classList.remove("animate__animate", "animate__fadeInLeft");
+      navBar.classList.remove("open");
 
       openMenu = false;
     }
   });
 });
+
+// const navList = document.getElementById("navbar-list");
+// const hideNav = navList.querySelector("li a");
+// let hideMe = false;
+
+// hideNav.addEventListener("click", function () {
+//   if (!hideMe) {
+//     navList.style.backgroundColor = "green";
+//     hideMe = true;
+//   } else {
+//     navList.classList.remove("visibility");
+
+//     hideMe = false;
+//   }
+// });
+
+// window.addEventListener("scroll", function () {
+//   const nav = document.querySelector("nav");
+//   nav.classList.toggle("nav_bg", window.scrollY > 150);
+// });
