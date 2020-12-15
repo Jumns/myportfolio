@@ -54,6 +54,8 @@
   </head>
 
   <body>
+    <div id="scroll_top"></div>
+
     <header>
       <nav
         class="fixed-top d-flex justify-content-between align-items-center"
@@ -73,10 +75,20 @@
         </div>
         <div class="" id="navbar">
           <ul class="navbar-list animation" id="navbar-list">
-            <li><a href="index.html"> Home </a></li>
+            <li>
+              <a href="index.html"
+                ><span class="hide-desktop">🏠</span> Home
+              </a>
+            </li>
             <li><a class="active-page" href="about.html">🤓 About </a></li>
-            <li><a href="#contact"> Connect </a></li>
-            <li><a href="blog.html"> Blog </a></li>
+            <li>
+              <a href="#contact"
+                ><span class="hide-desktop">🤝🏽</span> Connect
+              </a>
+            </li>
+            <li>
+              <a href="blog.html"><span class="hide-desktop">📰</span> Blog </a>
+            </li>
           </ul>
         </div>
         <a
@@ -122,14 +134,14 @@
           >
             <a href="./images/Jnath.jpg">
               <img
-                src="images/jnath.jpg"
+                src="./images/Jnath.jpg"
                 class="img-fluid img mx-auto"
                 alt="Nathan Jonah: Frontend Developer"
             /></a>
           </div>
 
           <div
-            class="col col-lg-4 col-md-6 col-sm-10 mt-0 mb-2 mt-md-3"
+            class="col col-lg-4 col-md-6 col-sm-10 mt-0 mb-2 mt-md-3 about"
             data-aos="fade-up"
             data-aos-delay="400"
           >
@@ -143,12 +155,13 @@
               I've learned (and still learning) and understood most of the
               technologies that this profession requires, I've also explored(and
               still exploring) it in different projects, personally, via
-              collaborations and contribution to open source softwares (OSS).
+              collaborations and contributions to open source softwares (OSS).
               I'm pretty creative too, I promise.
             </p>
             <p>
               I write and speak English fluently and I am emotionally
-              intellegent, working with me will be fun and a lot productive.
+              intellegent, working with me will be fun and a lot productive. I
+              am also open to collaborations.
             </p>
             <p>
               What more could you look for in a professional website and app
@@ -173,7 +186,7 @@
                 <i class="fa fa-check-square"></i> Great Learner.
               </li>
               <li class="list-group-item bg-light">
-                <i class="fa fa-check-square"></i> Well Equipt With The Right
+                <i class="fa fa-check-square"></i> Well Equipped With The Right
                 Tools.
               </li>
               <li class="list-group-item bg-light">
@@ -355,22 +368,33 @@
     <!-- footer  section-->
     <section class="py-5 footer">
       <div class="container">
-        <div class="row text-center">
+        <div
+          class="row text-center d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="col-lg-6 text-center logo mb-3">
+            <img class="footer-logo" src="/images/logo-light.svg" alt="" />
+          </div>
           <div class="col">
-            <p class="text-white" id="footer">
-              <i class="fa fa-code"></i> By:
+            <p class="" id="footer">
+              <i class="fa fa-code"></i> With <i class="fa fa-heart"></i> From
+              🇳🇬 By:
               <a
                 href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
                 target="_blank"
-                >Nathan Jonah</a
-              >
+                >Nathan Jonah
+              </a>
             </p>
-            <p class="copy">&copy; 2020 All rights reserved</p>
+            <p class="copy">&copy; 2020 Few rights reserved</p>
           </div>
         </div>
       </div>
     </section>
     <!-- end of footer -->
+    <div>
+      <a href="#scroll_top" class="scroll_top"
+        ><img src="./images/scroll_top.svg" alt=""
+      /></a>
+    </div>
     <script src="./js/jquery.js"></script>
     <script src="./aos/aos.js"></script>
     <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->

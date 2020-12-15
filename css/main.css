@@ -27,6 +27,14 @@ body {
   line-height: 1.6;
 }
 
+.hero-pic img {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--light_gray_);
+  outline: 3px solid var(--light_gray_);
+  border-radius: 50%;
+}
+
 body.overlay::before {
   position: fixed;
   content: "";
@@ -52,6 +60,27 @@ body.overlay::before {
   top: 580px;
   animation: move 1s infinite alternate;
   -webkit-animation: move 1s infinite alternate;
+}
+
+.scroll_top {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 30px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
+  background: var(--secondary_);
+  padding: 0.4em;
+  border-radius: 0.2em;
+  text-align: center;
+  transition: all 0.3s ease-in;
+}
+
+.visibility {
+  visibility: visible;
 }
 
 @keyframes move {
@@ -103,8 +132,13 @@ h6 {
 }
 
 .logo {
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-logo {
+  width: 40px;
+  height: 40px;
 }
 
 /* =========== NAVIGATION */
@@ -204,7 +238,6 @@ nav {
 }
 
 #welcome-section h1 {
-  font-weight: bolder;
   color: white;
   font-size: 2.5rem;
 }
@@ -222,6 +255,10 @@ nav {
   box-shadow: 0 2px 5px white;
   border-radius: 0.5em;
   color: var(--dark_);
+}
+
+.about > p {
+  text-indent: 15px;
 }
 
 .abt-img {
@@ -505,6 +542,12 @@ textarea {
 
 /* ============= FOOTER */
 
+#footer > .fa-code,
+p,
+.fa-heart {
+  color: grey;
+  font-size: 0.9rem;
+}
 #footer a {
   color: var(--primary_);
 }
@@ -514,6 +557,7 @@ textarea {
 
 .footer .copy {
   color: gray;
+  font-size: 0.8rem;
 }
 
 /* =============== END OF FOOTER =============== */
@@ -656,7 +700,7 @@ textarea {
 }
 
 .scroll {
-  top: 32rem;
+  top: 31.5rem;
 }
 
 .abt-txt,
@@ -688,11 +732,6 @@ textarea {
 
 .active-page {
   color: var(--primary_) !important;
-}
-
-.logo {
-  width: 40px;
-  height: 40px;
 }
 
 /* .social-media {
@@ -782,6 +821,21 @@ textarea {
     align-items: center;
     justify-content: space-around;
   }
+
+  .scroll_top {
+    width: 35px;
+    height: 35px;
+  }
+
+  .logo {
+    width: 55px;
+    height: 55px;
+  }
+
+  .footer-logo {
+    width: 55px;
+    height: 55px;
+  }
 }
 @media (min-width: 768px) {
   .abt-me {
@@ -794,7 +848,7 @@ textarea {
   }
 
   .scroll {
-    top: 34rem;
+    top: 36rem;
   }
 
   .name {
@@ -823,6 +877,10 @@ textarea {
     margin-bottom: 0;
   }
 
+  .hide-desktop {
+    display: none;
+  }
+
   .scroll {
     top: 36rem;
   }
@@ -839,7 +897,7 @@ textarea {
 
   nav {
     background-color: var(--light_gray_);
-    padding: 0 2em;
+    padding: 0 4em;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -14,46 +14,57 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   // navigation bar
-
   const menuBtn = document.getElementById("menu_btn");
   const iconImg = menuBtn.querySelector("img");
   const navBar = document.getElementById("navbar-list");
 
-  let openMenu = false;
+  let isOpen = false;
+  const options = { bubbles: true };
+  let navBarClose = new CustomEvent("navBar-close", options);
 
   menuBtn.addEventListener("click", () => {
-    if (!openMenu) {
-      navBar.style.visibility = "visible";
-      document.body.classList.add("overlay");
-      iconImg.src = "images/icon-close.svg";
-      navBar.classList.add("open");
-
-      openMenu = true;
+    if (!isOpen) {
+      menuBtn.dispatchEvent(new CustomEvent("navBar-open", options));
     } else {
-      navBar.style.visibility = "hidden";
-      document.body.classList.remove("overlay");
-      iconImg.src = "images/icon-hamburger.svg";
-      navBar.classList.remove("open");
-
-      openMenu = false;
+      menuBtn.dispatchEvent(navBarClose);
     }
+    isOpen = !isOpen;
+  });
+
+  const miniLaptop = 992;
+  navBar.addEventListener("click", () => {
+    if (window.innerWidth >= miniLaptop) {
+      return;
+    }
+    navBar.dispatchEvent(navBarClose);
+  });
+
+  document.addEventListener("navBar-open", () => {
+    navBar.style.visibility = "visible";
+    document.body.classList.add("overlay");
+    iconImg.src = "images/icon-close.svg";
+    navBar.classList.add("open");
+  });
+
+  document.addEventListener("navBar-close", () => {
+    navBar.style.visibility = "hidden";
+    document.body.classList.remove("overlay");
+    iconImg.src = "images/icon-hamburger.svg";
+    navBar.classList.remove("open");
   });
 });
 
-// const navList = document.getElementById("navbar-list");
-// const hideNav = navList.querySelector("li a");
-// let hideMe = false;
-
-// hideNav.addEventListener("click", function () {
-//   if (!hideMe) {
-//     navList.style.backgroundColor = "green";
-//     hideMe = true;
-//   } else {
-//     navList.classList.remove("visibility");
-
-//     hideMe = false;
-//   }
-// });
+window.addEventListener("scroll", function () {
+  const showScrollTop = window.scrollY > 100;
+  // const hideScrollTop = window.scrollY < 150;
+  const scroll_top = document.querySelector("div .scroll_top");
+  // scroll_top.classList.add("visibility", window.scrollY > 150);
+  if (showScrollTop) {
+    scroll_top.classList.add("visibility");
+  } else {
+    scroll_top.classList.remove("visibility");
+  }
+});
 
 // window.addEventListener("scroll", function () {
 //   const nav = document.querySelector("nav");

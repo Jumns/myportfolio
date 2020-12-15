@@ -58,6 +58,8 @@
   </head>
 
   <body>
+    <div id="scroll_top"></div>
+
     <header>
       <nav
         class="fixed-top d-flex justify-content-between align-items-center"
@@ -80,11 +82,31 @@
             <li>
               <a class="active-page hide-nav" href="index.html">🏠 Home </a>
             </li>
-            <li><a class="about" href="about.html"> About </a></li>
-            <li><a class="skills" href="#skills"> Skills </a></li>
-            <li><a class="portfolio" href="#projects"> Portfolio </a></li>
-            <li><a class="connect" href="#contact"> Connect </a></li>
-            <li><a class="blog" href="blog.html"> Blog </a></li>
+            <li>
+              <a class="about" href="about.html">
+                <span class="hide-desktop">🤓</span> About
+              </a>
+            </li>
+            <li>
+              <a class="skills" href="#skills">
+                <span class="hide-desktop">💻</span> Skills
+              </a>
+            </li>
+            <li>
+              <a class="portfolio" href="#projects"
+                ><span class="hide-desktop">📂</span> Portfolio
+              </a>
+            </li>
+            <li>
+              <a class="connect" href="#contact"
+                ><span class="hide-desktop">🤝🏽</span> Connect
+              </a>
+            </li>
+            <li>
+              <a class="blog" href="blog.html"
+                ><span class="hide-desktop">📰</span> Blog
+              </a>
+            </li>
           </ul>
         </div>
         <!-- hire btn -->
@@ -105,6 +127,11 @@
       id="welcome-section"
     >
       <div class="row text-center align-items-center">
+        <div
+          class="hero-pic col-sm-12 d-flex justify-content-center align-items-center d-md-none mb-2"
+        >
+          <img src="./images/Jnath.jpg" alt="" />
+        </div>
         <div class="col-lg-12 mt-1">
           <h3 data-aos="fade-down" data-aos-delay="350">
             <span class="hello">Hello<i class="fa fa-exclamation"></i>,</span
@@ -565,22 +592,33 @@
     <!-- footer  section-->
     <section class="py-5 footer">
       <div class="container">
-        <div class="row text-center">
+        <div
+          class="row text-center d-flex flex-column justify-content-center align-items-center"
+        >
+          <div class="col-lg-6 text-center logo mb-3">
+            <img class="footer-logo" src="/images/logo-light.svg" alt="" />
+          </div>
           <div class="col">
-            <p class="text-white" id="footer">
-              <i class="fa fa-code"></i> By:
+            <p class="" id="footer">
+              <i class="fa fa-code"></i> With <i class="fa fa-heart"></i> From
+              🇳🇬 By:
               <a
                 href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
                 target="_blank"
                 >Nathan Jonah
               </a>
             </p>
-            <p class="copy">&copy; 2020 All rights reserved</p>
+            <p class="copy">&copy; 2020 Few rights reserved</p>
           </div>
         </div>
       </div>
     </section>
     <!-- end of footer -->
+    <div>
+      <a href="#scroll_top" class="scroll_top"
+        ><img src="./images/scroll_top.svg" alt=""
+      /></a>
+    </div>
 
     <script src="./js/jquery.js"></script>
     <script src="./aos/aos.js"></script>
