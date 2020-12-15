@@ -28,8 +28,8 @@ body {
 }
 
 .hero-pic img {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border: 3px solid var(--light_gray_);
   outline: 3px solid var(--light_gray_);
   border-radius: 50%;
@@ -56,10 +56,11 @@ body.overlay::before {
 .scroll {
   position: absolute;
   content: "";
+  top: 31.5rem;
   right: 49%;
-  top: 580px;
   animation: move 1s infinite alternate;
   -webkit-animation: move 1s infinite alternate;
+  height: 45px;
 }
 
 .scroll_top {
@@ -215,19 +216,17 @@ nav {
   height: 100vh;
 }
 
-.hello {
+.hello,
+.iam {
   background-color: var(--primary_);
   color: white;
   padding: 0.1rem 0.5rem;
   border-radius: 0.5rem 0 0 0.5rem;
-  font-size: 1.3rem;
+  font-size: 1rem;
 }
 .iam {
   background-color: var(--secondary_);
-  color: white;
-  padding: 0.1rem 0.5rem;
   border-radius: 0 0.5rem 0.5rem 0;
-  font-size: 1.3rem;
 }
 
 .work {
@@ -426,7 +425,7 @@ blockquote > small {
 
 .name {
   font-size: 1rem;
-  padding: 0.3em 0;
+  padding: 0.1em 0;
 }
 
 /* ========= HEADIINGS =========== */
@@ -699,18 +698,9 @@ p,
   -webkit-transform: translateX(0);
 }
 
-.scroll {
-  top: 31.5rem;
-}
-
 .abt-txt,
 .abt-me {
   display: none;
-}
-
-.hello,
-.iam {
-  font-size: 0.6em;
 }
 
 .name {
@@ -779,11 +769,6 @@ p,
     font-size: 1.5rem;
   }
 
-  .hello,
-  .iam {
-    font-size: 1.3rem;
-  }
-
   .social-media {
     flex-direction: row;
     align-items: center;
@@ -849,6 +834,7 @@ p,
 
   .scroll {
     top: 36rem;
+    height: initial;
   }
 
   .name {
