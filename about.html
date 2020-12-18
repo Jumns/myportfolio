@@ -105,9 +105,6 @@
     <section class="abt-img py-5 mt-5">
       <div class="container mb-5">
         <div class="row align-items-center">
-          <div class="col-lg-6">
-            <img src="./images/about-me.svg" class="img-fluid" alt="" />
-          </div>
           <div class="col-lg-6 text-center mt-5 py-3">
             <h4 class="heading-shadow" data-aos="zoom-in" data-aos-delay="500">
               About Me!
@@ -121,6 +118,10 @@
                 <i class="fa fa-circle"></i> Get To Know Me!
               </p>
             </div>
+          </div>
+          <!-- about-illustration -->
+          <div class="col-lg-6">
+            <img src="./images/about-me.svg" class="img-fluid" alt="" />
           </div>
         </div>
       </div>
@@ -146,27 +147,30 @@
             data-aos-delay="400"
           >
             <h2>Who Am I? 🤓</h2>
-            <p>
-              Hi, I am Nathan Jonah, a 24 year old frontend developer & a
-              graphic designer from <i class="fa fa-map-marker"></i>
-              Nigeria, West Africa.
-            </p>
-            <p>
-              I've learned (and still learning) and understood most of the
-              technologies that this profession requires, I've also explored(and
-              still exploring) it in different projects, personally, via
-              collaborations and contributions to open source softwares (OSS).
-              I'm pretty creative too, I promise.
-            </p>
-            <p>
-              I write and speak English fluently and I am emotionally
-              intellegent, working with me will be fun and a lot productive. I
-              am also open to collaborations.
-            </p>
-            <p>
-              What more could you look for in a professional website and app
-              developer? Send me that email before i'm taken away in a jiffy.
-            </p>
+            <div class="bg-light p-3 rounded">
+              <p>
+                Hi, I am Nathan Jonah, a 24 year old frontend developer & a
+                graphic designer from <i class="fa fa-map-marker"></i>
+                Nigeria, West Africa.
+              </p>
+              <p>
+                I've learned (and still learning) and understood most of the
+                technologies that this profession requires, I've also
+                explored(and still exploring) it in different projects,
+                personally, via collaborations and contributions to open source
+                softwares (OSS). I'm pretty creative too, I promise.
+              </p>
+              <p>
+                I write and speak English fluently and I am emotionally
+                intellegent, working with me will be fun and a lot productive. I
+                am also open to collaborations.
+              </p>
+              <p>
+                What more could you look for in a professional website and app
+                developer? Send me that email before I'm taken away in a jiffy
+                ☺️.
+              </p>
+            </div>
           </div>
 
           <div
@@ -282,7 +286,7 @@
               method="POST"
             >
               <div class="row">
-                <div class="col-sm-12 col-md-6 mb-4">
+                <div class="col-sm-12 col-md-6 mb-2">
                   <input
                     name="name"
                     type="text"
@@ -340,7 +344,10 @@
               <div class="text-left ml-3">
                 <h5>Email</h5>
                 <p class="text-muted">
-                  heisnathan@outlook.com <br />
+                  <a href="mailto: heisnathan@outlook.com " class="text-muted">
+                    heisnathan@outlook.com
+                  </a>
+                  <br />
                   Send me your query anytime!
                 </p>
               </div>
@@ -353,7 +360,10 @@
               <div class="text-left ml-3">
                 <h5>Call</h5>
                 <p class="text-muted">
-                  (+234) 8106706775 <br />
+                  <a href="tel:+2348106706775" class="text-muted"
+                    >(+234) 8106706775
+                  </a>
+                  <br />
                   Mon. to Fri. 9am to 6pm
                 </p>
               </div>
@@ -376,8 +386,8 @@
           </div>
           <div class="col">
             <p class="" id="footer">
-              <i class="fa fa-code"></i> With <i class="fa fa-heart"></i> From
-              🇳🇬 By:
+              <i class="fa fa-code" title="code"></i> With
+              <i class="fa fa-heart" title="Love"></i> From 🇳🇬 By:
               <a
                 href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
                 target="_blank"
@@ -385,8 +395,10 @@
               </a>
             </p>
             <p class="copy">
-              &copy; 2020 Few rights reserveds
-              <span style="color: var(--secondary_); font-size: 2rem">.</span>
+              &copy; 2020 Few rights reserved<span
+                style="color: var(--secondary_); font-size: 2rem"
+                >.</span
+              >
             </p>
           </div>
         </div>

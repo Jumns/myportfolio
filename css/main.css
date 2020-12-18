@@ -30,9 +30,10 @@ body {
 .hero-pic img {
   width: 70px;
   height: 70px;
-  border: 3px solid var(--light_gray_);
-  outline: 3px solid var(--light_gray_);
+  border: 1px solid var(--light_gray_);
+  outline: 2px solid var(--light_gray_);
   border-radius: 50%;
+  position: relative;
 }
 
 body.overlay::before {
@@ -198,7 +199,7 @@ nav {
 .hire-btn:hover {
   background: linear-gradient(to left, var(--primary_), var(--secondary_));
   color: var(--light_gray_);
-  transition: all 0.5s ease-in-out;
+  transition: background 0.5s ease-in;
   text-decoration: none;
 }
 
@@ -302,6 +303,19 @@ nav {
 /* box-shadow for card */
 .card {
   box-shadow: 2px 5px 15px lightgray;
+  cursor: default;
+}
+
+.scale_card:hover {
+  transform: scale(1.1) !important;
+  transition: all 0.3s ease-in !important;
+  z-index: 2;
+}
+
+.scale_card:hover .fab {
+  transform: rotate(360deg) !important;
+  transition: all 0.5s ease-in !important;
+  z-index: 2;
 }
 
 /* =========== SKILLS FA ICONS & STYLES */
@@ -454,7 +468,7 @@ blockquote > small {
 
 .heading-shadow {
   font-size: 3.2rem;
-  color: rgba(255, 254, 254, 0.246);
+  color: rgba(255, 254, 254, 0.546);
   text-transform: uppercase;
   margin-bottom: -30px;
 }
@@ -546,6 +560,16 @@ p,
 .fa-heart {
   color: grey;
   font-size: 0.9rem;
+}
+
+#footer > .fa-code:hover {
+  color: var(--primary_);
+  transition: 0.4s;
+}
+
+#footer > .fa-heart:hover {
+  color: red;
+  transition: 0.4s;
 }
 #footer a {
   color: var(--primary_);
