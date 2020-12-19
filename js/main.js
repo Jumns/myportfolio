@@ -56,13 +56,16 @@ window.addEventListener("DOMContentLoaded", function () {
 
 window.addEventListener("scroll", function () {
   const showScrollTop = window.scrollY > 100;
+  const nav = document.querySelector("nav");
   // const hideScrollTop = window.scrollY < 150;
   const scroll_top = document.querySelector("div .scroll_top");
   // scroll_top.classList.add("visibility", window.scrollY > 150);
   if (showScrollTop) {
     scroll_top.classList.add("visibility");
+    nav.classList.add("bg-white");
   } else {
     scroll_top.classList.remove("visibility");
+    nav.classList.remove("bg-white");
   }
 });
 

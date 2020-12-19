@@ -301,14 +301,11 @@ nav {
 /* ON ends here */
 
 /* box-shadow for card */
-.card {
-  box-shadow: 2px 5px 15px lightgray;
-  cursor: default;
-}
-
 .scale_card:hover {
   transform: scale(1.1) !important;
   transition: all 0.3s ease-in !important;
+  box-shadow: 2px 5px 10px grey;
+  cursor: default;
   z-index: 2;
 }
 
@@ -832,23 +829,15 @@ p,
   }
 
   .scroll_top {
-    width: 35px;
-    height: 35px;
+    width: 30px;
+    height: 30px;
+    /* transition: 0.5s; */
   }
 
-  .logo {
-    width: 55px;
-    height: 55px;
-  }
-
-  .footer-logo {
-    width: 55px;
-    height: 55px;
-  }
-}
-@media (min-width: 768px) {
-  .abt-me {
-    display: initial;
+  .bg-white {
+    background-color: rgb(206, 206, 206);
+    box-shadow: 0 0 10px 0 gray;
+    transition: background 0.5s ease-in;
   }
 
   .abt-txt {
@@ -906,7 +895,7 @@ p,
   }
 
   nav {
-    background-color: var(--light_gray_);
+    background-color: rgba(255, 255, 255, 0.801);
     padding: 0 4em;
     display: flex;
     justify-content: center;
