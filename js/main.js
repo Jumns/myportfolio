@@ -55,17 +55,37 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 window.addEventListener("scroll", function () {
-  const showScrollTop = window.scrollY > 100;
-  const nav = document.querySelector("nav");
-  // const hideScrollTop = window.scrollY < 150;
-  const scroll_top = document.querySelector("div .scroll_top");
   // scroll_top.classList.add("visibility", window.scrollY > 150);
+  const showScrollTop = window.scrollY > 100;
+  const nav = document.querySelector("#nav");
+  const scroll_top = document.querySelector("div .scroll_top");
+  const navItems = document.querySelectorAll("ul .nav-item a");
+  const logo = document.querySelector("nav a .logo"); //img.logo
+  const hpHireBtn = document.querySelector(".hp-hire");
+  const hpMenuIcon = document.querySelector(".hp-menu img");
+
   if (showScrollTop) {
     scroll_top.classList.add("visibility");
     nav.classList.add("bg-white");
+    hpMenuIcon.classList.add("hp-menu");
+    hpHireBtn.classList.add("color-dark");
+    // logos
+    logo.classList.add("img-white");
+    // nav items
+    navItems.forEach((navItem) => {
+      navItem.classList.add("color-dark");
+    });
   } else {
     scroll_top.classList.remove("visibility");
     nav.classList.remove("bg-white");
+    hpMenuIcon.classList.remove("hp-menu");
+    hpHireBtn.classList.remove("color-dark");
+    // logos
+    logo.classList.remove("img-white");
+    // nav items
+    navItems.forEach((navItem) => {
+      navItem.classList.remove("color-dark");
+    });
   }
 });
 

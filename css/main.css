@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
 
 :root {
   --animate-duration: 800ms;
@@ -10,9 +12,9 @@
   --tertiary_: #2b3016;
   --light_gray_: #eff0ef;
   --dark_: #121215;
-  box-sizing: border-box;
 }
 * {
+  box-sizing: border-box;
   font-family: "Ubuntu", sans-serif;
 }
 body {
@@ -50,6 +52,7 @@ body.overlay::before {
 
 .menu_btn {
   cursor: pointer;
+  padding: 5px;
 }
 
 /* ========== SCROLL=========== */
@@ -57,8 +60,9 @@ body.overlay::before {
 .scroll {
   position: absolute;
   content: "";
-  top: 31.5rem;
-  right: 49%;
+  top: 30rem;
+  margin-left: 0;
+  margin-right: 0;
   animation: move 1s infinite alternate;
   -webkit-animation: move 1s infinite alternate;
   height: 45px;
@@ -108,6 +112,11 @@ ul {
   padding: 0;
 }
 
+figure {
+  margin: 0;
+  padding: 0;
+}
+
 p {
   word-break: normal;
 }
@@ -118,9 +127,7 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: "Itim", cursive; */
-  /* font-family: "Russo One", sans-serif; */
-  font-family: "Fredoka One", cursive;
+  font-family: "Source Sans Pro", sans-serif;
   color: var(--tertiary_);
 }
 
@@ -131,6 +138,10 @@ h6 {
   html {
     scroll-behavior: auto;
   }
+}
+
+.dev {
+  color: var(--primary_);
 }
 
 .logo {
@@ -146,9 +157,27 @@ h6 {
 /* =========== NAVIGATION */
 
 nav {
-  background-color: var(--light_gray_);
+  /* background-color: var(--light_gray_); */
   padding: 1em 2em;
   display: flex;
+}
+
+.bg-white {
+  background-color: rgb(206, 206, 206);
+  box-shadow: 0 0 10px 0 gray;
+  transition: background 0.5s ease-in;
+}
+
+.img-white {
+  filter: invert(1);
+  -webkit-filter: invert(1);
+  transition: 0.5s ease-in;
+}
+
+.hp-menu {
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  transition: 0.5s ease-in;
 }
 
 .navbar-list {
@@ -171,10 +200,19 @@ nav {
 
 .navbar-list a {
   text-decoration: none;
-  color: var(--dark_);
+  color: var(--light_gray);
   font-size: 1.2rem;
   display: block;
   padding: 0.7em 0;
+}
+
+.nav-item a {
+  color: rgb(20, 20, 20);
+}
+
+.navbar-list a.dark {
+  text-decoration: none;
+  color: var(--dark);
 }
 
 .navbar-list a:hover {
@@ -185,29 +223,39 @@ nav {
 
 .hire-btn {
   display: none;
-  background: linear-gradient(to right, var(--primary_), var(--secondary_));
-  color: var(--light_gray_);
+  color: var(--dark);
   padding: 0.4em 1.6em;
   text-decoration: none;
   font-weight: 500;
   font-size: 1rem;
   text-transform: uppercase;
+  border: 2px solid grey;
   border-radius: 2em;
-  box-shadow: 3px 3px 10px var(--tertiary_);
+  transition: 0.5s ease-in;
+  box-shadow: 0 2px 3px lightgrey;
 }
 
 .hire-btn:hover {
-  background: linear-gradient(to left, var(--primary_), var(--secondary_));
-  color: var(--light_gray_);
-  transition: background 0.5s ease-in;
+  background: var(--primary_);
+  color: #fff;
   text-decoration: none;
+  border-color: var(--secondary_);
+}
+
+.cta-hire a {
+  background-color: var(--secondary_);
+  transition: background 0.5s;
+}
+
+.cta-hire a:hover {
+  background-color: var(--primary_);
 }
 
 /* =========== END OF NAVIGATION ===========*/
 
 ::selection {
   background-color: var(--primary_);
-  color: var(--light_gray);
+  color: #fff;
 }
 
 /* =========== HERO SECTION ============ */
@@ -217,24 +265,15 @@ nav {
   height: 100vh;
 }
 
-.hello,
-.iam {
-  background-color: var(--primary_);
+.hello {
   color: white;
-  padding: 0.1rem 0.5rem;
-  border-radius: 0.5rem 0 0 0.5rem;
   font-size: 1rem;
-}
-.iam {
-  background-color: var(--secondary_);
-  border-radius: 0 0.5rem 0.5rem 0;
 }
 
 .work {
   font-size: 2em;
   color: white;
   margin-bottom: 1em;
-  font-family: "Itim", cursive;
 }
 
 #welcome-section h1 {
@@ -244,7 +283,16 @@ nav {
 
 /* ============ END OF HERO SECTIOIN ============== */
 
+/* ============ QUOTES============== */
+.inspiration {
+  padding: 8rem 0;
+}
+
 /* ============ ABOUT ME */
+
+.about {
+  padding: 3rem;
+}
 
 .abt-me {
   background-color: var(--light_gray_);
@@ -259,6 +307,12 @@ nav {
 
 .about > p {
   text-indent: 15px;
+  font-size: 1.2rem;
+}
+
+.qualities > ul li {
+  text-indent: 15px;
+  font-size: 1.2rem;
 }
 
 .abt-img {
@@ -266,18 +320,15 @@ nav {
 }
 
 .img {
-  outline: 0.5rem solid rgba(255, 255, 255, 0.637);
-  outline-offset: -20px;
+  border: 0.5rem solid rgba(255, 255, 255, 0.637);
+  width: 200px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px grey;
 }
 
 .abt-txt {
-  color: rgb(58, 58, 58);
-  background-color: var(--tertiary_);
-  color: var(--light_gray);
-  border-radius: 1em;
-  padding: 1.5em;
   font-size: 1.1em;
-  line-height: 1.7;
+  margin-top: 0;
 }
 
 /* =============== END OF ABOUT ME =============== */
@@ -302,9 +353,8 @@ nav {
 
 /* box-shadow for card */
 .scale_card:hover {
-  transform: scale(1.1) !important;
-  transition: all 0.3s ease-in !important;
-  box-shadow: 2px 5px 10px grey;
+  transition: all 0.5s ease-in !important;
+  box-shadow: 0 5px 15px #999;
   cursor: default;
   z-index: 2;
 }
@@ -353,7 +403,9 @@ nav {
 
 #skills {
   position: relative;
-  padding: 5em 0;
+  padding: 8em 0;
+  border-top: 1px solid var(--primary_);
+  border-bottom: 1px solid var(--primary_);
 }
 
 #skills .hide-mobile {
@@ -366,19 +418,20 @@ nav {
 
 .fa-twitter,
 .fa-whatsapp,
-.fa-instagram,
+.fa-linkedin,
 .fa-github {
   font-size: 1.3em;
   margin: 0.4em 0;
-  color: var(--primary_);
+  color: var(--secondary_);
   background-color: var(--primary-lit_);
   padding: 0.5em;
   border-radius: 50%;
   border: 0.5px dashed var(--secondary_);
 }
+
 .fa-twitter:hover,
 .fa-whatsapp:hover,
-.fa-instagram:hover,
+.fa-linkedin:hover,
 .fa-github:hover {
   color: white;
   background-color: var(--secondary_);
@@ -408,8 +461,10 @@ nav {
   text-shadow: 0 0 10px grey;
 }
 
-.fa-check-square {
-  color: limegreen;
+.fa-check-circle {
+  color: var(--primary_);
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
 }
 
 .social-media {
@@ -435,7 +490,7 @@ blockquote > small {
 }
 
 .name {
-  font-size: 1rem;
+  font-size: 1.5rem;
   padding: 0.1em 0;
 }
 
@@ -448,6 +503,7 @@ blockquote > small {
   text-align: center;
   text-decoration: underline orange;
   font-size: 2rem;
+  text-shadow: 1px 1px 5px var(--secondary_);
 }
 
 .blog-heading {
@@ -468,42 +524,51 @@ blockquote > small {
   color: rgba(255, 254, 254, 0.546);
   text-transform: uppercase;
   margin-bottom: -30px;
+  text-shadow: 1px 1px 3px #ec914cc4;
 }
 
 /* =========== END OF HEADINGS ============= */
 
 /* =========== PORTFOLIO ========== */
 #projects {
-  padding: 5em 1em;
+  padding: 8rem 0;
   background: linear-gradient(
     rgba(238, 176, 129, 0.157),
     rgba(238, 176, 129, 0.157)
   );
+  border-bottom: 1px solid var(--primary_);
 }
 
 /* ========== END OF PORTFOLIO ========== */
 
 /* ========== CONTACT SECTION ============ */
 #contact {
-  padding: 5em 1em;
+  padding: 6rem 0;
   /* scroll-margin-top: 1em; */
 }
 
 .increase-form {
   padding: 1em;
 }
-.email,
-.username,
-.subject {
+
+input {
   width: 100%;
   outline: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  border-bottom: 3px solid var(--primary_);
+  border: none;
+  border-bottom: 5px solid var(--primary_);
   background-color: var(--dark);
+  box-shadow: 0 2px 10px grey;
   color: white;
 }
+
+.search {
+  background-color: #fff;
+  box-shadow: none;
+  color: var(--dark);
+  border: none;
+  outline: none;
+}
+
 .subscribe {
   width: 100%;
   outline: none;
@@ -513,18 +578,14 @@ blockquote > small {
   padding: 0.8em 1em;
   margin-bottom: 15px;
 }
-.subject {
-  width: 100%;
-}
 
 textarea {
   width: 100%;
   outline: none;
-  border-top: none;
-  border-left: none;
-  border-right: none;
+  border: none;
   padding: 1.5em 1em;
   border-bottom: 3px solid var(--primary_) !important;
+  box-shadow: 0 2px 10px grey;
   background-color: var(--dark);
   color: white;
 }
@@ -532,13 +593,13 @@ textarea {
 .submit input {
   color: #fff;
   transition: all linear 400ms;
-  background-color: var(--tertiary_);
+  background-color: var(--primary_);
   border-radius: 0.3em;
   padding: 0.7em 0;
   cursor: pointer;
   width: 100%;
   font-size: 1.1em;
-  border: none;
+  border: 0.5px solid var(--primary_);
 }
 
 .submit input:hover {
@@ -573,6 +634,7 @@ p,
 }
 .footer {
   background-color: var(--dark_);
+  box-shadow: 0 0 15px var(--primary_);
 }
 
 .footer .copy {
@@ -731,7 +793,6 @@ p,
 .work {
   font-size: 1.8em;
   color: white;
-  font-family: "Itim", cursive;
 }
 
 .heading-shadow {
@@ -762,11 +823,6 @@ p,
 
 /* // Extra Small devices (landscape phones, 320px and up) */
 @media (min-width: 320px) {
-  .abt-txt {
-    margin-top: 1.8em;
-    font-size: 1rem;
-  }
-
   .warning {
     top: 100px;
   }
@@ -783,7 +839,7 @@ p,
   }
 
   .name {
-    font-size: 2.3rem !important;
+    font-size: 3rem !important;
   }
 
   .work {
@@ -807,15 +863,14 @@ p,
   }
 
   .name {
-    font-size: 2.5rem !important;
+    font-size: 4rem !important;
   }
 
   .work {
     font-size: 1.8rem;
   }
 
-  .hello,
-  .iam {
+  .hello {
     font-size: 1.3rem;
   }
 }
@@ -834,24 +889,13 @@ p,
     /* transition: 0.5s; */
   }
 
-  .bg-white {
-    background-color: rgb(206, 206, 206);
-    box-shadow: 0 0 10px 0 gray;
-    transition: background 0.5s ease-in;
-  }
-
   .abt-txt {
-    font-size: 1em;
     display: block;
   }
 
   .scroll {
-    top: 36rem;
+    top: 30rem;
     height: initial;
-  }
-
-  .name {
-    font-size: 2.5rem !important;
   }
 
   .work {
@@ -863,7 +907,6 @@ p,
     background-color: lawngreen !important;
   }
 
-  .iam,
   .hello {
     font-size: 1.4rem;
   }
@@ -880,10 +923,6 @@ p,
     display: none;
   }
 
-  .scroll {
-    top: 36rem;
-  }
-
   .fa-bootstrap,
   .fa-html5,
   .fa-css3,
@@ -895,11 +934,14 @@ p,
   }
 
   nav {
-    background-color: rgba(255, 255, 255, 0.801);
     padding: 0 4em;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .color-dark {
+    color: #000 !important;
   }
 
   .navbar-list {
@@ -918,10 +960,14 @@ p,
 
   .navbar-list a {
     text-decoration: none;
-    color: var(--dark_);
+    color: #000;
     font-size: 1.1rem;
     display: block;
     padding: 1.5em 0;
+  }
+
+  .navbar-list .nav-item a {
+    color: white;
   }
 
   .navbar-list * + * {
@@ -932,10 +978,18 @@ p,
     background: none;
     color: var(--secondary_);
     text-decoration: none;
-    transition: 0.5s;
+    transition: 1s;
   }
   .hire-btn {
     display: block;
+  }
+
+  .hp-hire {
+    color: #fff;
+  }
+
+  .hp-hire:hover {
+    color: white !important;
   }
 
   .animation {
@@ -962,6 +1016,21 @@ p,
 
   #projects .reverse {
     flex-direction: row;
+  }
+  .about-section {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .about {
+    padding: 4rem;
+  }
+
+  .about > p {
+    text-indent: 0;
+  }
+
+  .qualities li {
+    padding: 1rem;
   }
 }
 

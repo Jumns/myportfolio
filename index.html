@@ -9,15 +9,28 @@
 
     <meta
       name="description"
-      content="Nathan Jonah is a highly skilled professional Frontend Developer. He is passionate, dream filled and  enthusiatic  about bringing complicated layouts to live on the browser. "
+      content="Nathan Jonah is a highly skilled Frontend Developer. He is passionate, dream filled and  enthusiastic  in everything; website development and programming."
+    />
+
+    <meta name="author" content="Nathan Jonah Jumntan" />
+    <meta property="og:title" content="Nathan Jonah: Front End Developer" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nathan Jonah: Front End Developer" />
+    <meta property="og:url" content="https://www.jnathan.com.ng" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#f89345" />
+    <meta name="msapplication-navbutton-color" content="#f89345" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
     />
 
     <meta
       name="keywords"
-      content=" Nathan Jonah, Nathan Jonah Jumntan, Jumns, Nathan Jumns, Frontend Developer, Frontend Developer in Nigeria"
+      content=" Nathan Jonah,  Jumntan, Jumns,  Frontend Developer, Frontend Developer in Nigeria"
     />
 
-    <meta name="author" content="Nathan Jonah Jumntan" />
     <meta name="robots" content="index, follow" />
 
     <!--===================  end of meta tags =============== -->
@@ -74,44 +87,44 @@
         class="fixed-top d-flex justify-content-between align-items-center"
         id="nav"
       >
-        <a href="index.html"
+        <a href="index.html" class="nav-item"
           ><img
-            src="./images/logo.svg"
+            src="./images/logo-light.svg"
             title="Official Logo"
             alt="Nath Logo"
             class="logo"
             data-aos="zoom-out"
         /></a>
 
-        <div id="menu_btn" class="menu_btn ml-auto">
-          <img src="./images/icon-hamburger.svg" alt="" />
+        <div id="menu_btn" class="menu_btn ml-auto hp-menu">
+          <img src="./images/icon-hamburger.svg" alt="menu" />
         </div>
-        <div class="" id="navbar">
+        <div id="navbar">
           <ul class="navbar-list animation" id="navbar-list">
-            <li>
+            <!-- <li class="nav-item">
               <a class="active-page hide-nav" href="index.html">🏠 Home </a>
-            </li>
-            <li>
-              <a class="about" href="about.html">
+            </li> -->
+            <li class="nav-item">
+              <a class="about nav-item" href="about.html">
                 <span class="hide-desktop">🤓</span> About
               </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a class="skills" href="#skills">
                 <span class="hide-desktop">💻</span> Skills
               </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a class="portfolio" href="#projects"
                 ><span class="hide-desktop">📂</span> Portfolio
               </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a class="connect" href="#contact"
                 ><span class="hide-desktop">🤝🏽</span> Connect
               </a>
             </li>
-            <li>
+            <li class="nav-item">
               <a class="blog" href="blog.html"
                 ><span class="hide-desktop">📰</span> Blog
               </a>
@@ -121,81 +134,54 @@
         <!-- hire btn -->
         <div>
           <a
-            class="hire-btn"
+            class="hire-btn hp-hire"
             href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
             target="_blank"
-            >Hire Me <i class="fa fa-exclamation"></i
-          ></a>
+            >Hire Me!</a
+          >
         </div>
       </nav>
     </header>
 
     <!-- landing page / about -->
     <section
-      class="container-fluid d-flex justify-content-center py-5 align-items-center"
+      class="container-fluid d-flex justify-content-center align-items-center"
       id="welcome-section"
     >
       <div class="row text-center align-items-center">
-        <div
-          class="hero-pic col-sm-12 d-flex justify-content-center align-items-center d-md-none mb-2"
-        >
-          <a href="./images/Jnath.jpg"
-            ><img src="./images/Jnath.jpg" alt=""
-          /></a>
-        </div>
-        <div class="col-lg-12 mt-1">
+        <div class="col-lg-12">
           <h3 data-aos="fade-down" data-aos-delay="350">
-            <span class="hello">Hello<i class="fa fa-exclamation"></i></span
-            ><span class="iam">Meet</span>
+            <span class="hello">Hello!</span>
           </h3>
-          <h1 class="display-4 name" data-aos="fade-left">Nathan Jonah</h1>
-          <h2 class="work" data-aos="fade-right" data-aos-delay="500">
-            A Website Developer
-            <span
-              style="
-                color: var(--secondary_);
-                background-color: white;
-                padding: 0.1em;
-              "
-              >&</span
-            >
-            Graphic Designer<span
-              style="color: var(--light-grey_); font-size: 2rem"
+          <h1 class="name" data-aos="fade-left">I'm Nathan Jonah</h1>
+          <div class="work" data-aos="fade-right" data-aos-delay="500">
+            A <span class="dev">Website Developer</span> & Graphic Designer<span
+              style="color: var(--primary_); font-size: 2rem"
               >.</span
             >
-          </h2>
+          </div>
         </div>
         <div
           class="col-sm-10 col-lg-7 mx-auto"
           data-aos="fade-left"
           data-aos-delay="650"
         >
-          <div class="d-flex justify-content-center align-items-center">
-            <h4 class="abt-me">Me in 10s</h4>
-          </div>
           <p class="abt-txt text-light">
-            Yes! I am a professional frontend Developer and a graphic designer
-            at heart. I help start ups, NGOs, small agencies and businesses
-            bring their ideas to live.
+            I help start ups, NGOs, small agencies and businesses bring their
+            ideas to live.
             <br />
           </p>
-          <a
-            href="about.html"
-            class="btn text-light"
-            style="background-color: rgba(0, 255, 21, 0.726)"
-            >More About Me</a
-          >
         </div>
       </div>
       <img
         class="scroll"
         src="./images/scroll.png"
-        alt=""
+        alt="scroll_top"
         title="scroll down"
       />
     </section>
 
-    <section class="py-5 inspiration" data-aos="zoom-in" data-aos-delay="500">
+    <section class="inspiration" data-aos="zoom-in" data-aos-delay="500">
       <div class="container">
         <div class="row">
           <div
@@ -258,14 +244,21 @@
               <div class="container mb-5">
                 <h4 class="heading-shadow" data-aos="zoom-in">my skills</h4>
                 <h2 class="heading" data-aos="zoom-in">my skills</h2>
-                <p class="text-center text-capitalize">
+                <p
+                  class="text-center text-capitalize"
+                  style="font-family: 'Pacifico', cursive"
+                >
                   <i class="fa fa-circle"></i> i am skilled at
                 </p>
               </div>
             </div>
 
             <div class="col-lg-6">
-              <img src="./images/skilllls.svg" class="img-fluid" alt="" />
+              <img
+                src="./images/skilllls.svg"
+                class="img-fluid"
+                alt="Nathan skills"
+              />
             </div>
           </div>
           <!-- heading ends -->
@@ -368,9 +361,13 @@
       <div class="container">
         <!-- heading starts -->
 
-        <div class="row align-items-center justify-content-center reverse py-3">
+        <div class="row align-items-center justify-content-center reverse">
           <div class="col-lg-6">
-            <img src="./images/portfolio.svg" class="img-fluid" alt="" />
+            <img
+              src="./images/portfolio.svg"
+              class="img-fluid"
+              alt="Nathan portfolio"
+            />
           </div>
           <div class="col-lg-6 text-center">
             <h4 class="heading-shadow" data-aos="zoom-in">portfolio</h4>
@@ -378,7 +375,10 @@
               <h2 class="heading-1 project-title" data-aos="zoom-in">
                 portfolio
               </h2>
-              <p class="text-center text-capitalize">
+              <p
+                class="text-center text-capitalize"
+                style="font-family: 'Pacifico', cursive"
+              >
                 <i class="fa fa-circle"></i> most recent projects
               </p>
             </div>
@@ -393,7 +393,7 @@
                 <img
                   src="./images/Nath-college.png"
                   class="card-img-top img-fluid"
-                  alt="..."
+                  alt="Nathan College"
                 />
               </div>
               <div class="overlay-01 overlayLeft">
@@ -415,7 +415,7 @@
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <!-- 
+            <!--
               My DayLike
              -->
             <div class="container-0">
@@ -449,7 +449,7 @@
                 <img
                   src="./images/Farmers-world.png"
                   class="card-img-top img-fluid"
-                  alt="..."
+                  alt="Nathan Farmers World"
                 />
               </div>
               <div class="overlay-01 overlayLeft">
@@ -479,13 +479,20 @@
             <h4 class="heading-shadow" data-aos="zoom-in">Contact</h4>
             <div class="container mb-4 position-relative">
               <h2 class="heading-2" data-aos="zoom-in">Contact</h2>
-              <p class="text-center text-capitalize">
+              <p
+                class="text-center text-capitalize"
+                style="font-family: 'Pacifico', cursive"
+              >
                 <i class="fa fa-circle"></i> Let's Connect
               </p>
             </div>
           </div>
           <div class="col-lg-6">
-            <img src="./images/contact.svg" class="img-fluid" alt="" />
+            <img
+              src="./images/contact.svg"
+              class="img-fluid"
+              alt="Nathan Contact"
+            />
           </div>
         </div>
       </div>
@@ -511,8 +518,11 @@
               ></a>
             </div>
             <div>
-              <a href="https://instagram.com/mr.jumns" target="_blank">
-                <i class="fab fa-instagram" title="Instagram"></i
+              <a
+                href="https://www.linkedin.com/in/nathan-jonah-1210801aa/"
+                target="_blank"
+              >
+                <i class="fab fa-linkedin" title="Linkedin"></i
               ></a>
             </div>
             <div>
@@ -528,26 +538,26 @@
               method="POST"
             >
               <div class="row">
-                <div class="col-sm-12 col-md-6 mb-4">
+                <div class="col-sm-12 col-md-6 mb-3">
                   <input
                     name="name"
                     type="text"
                     class="username increase-form"
-                    placeholder="Enter Name"
+                    placeholder="Full Name"
                     required
                   />
                 </div>
-                <div class="col-sm-12 col-md-6 mb-4">
+                <div class="col-sm-12 col-md-6 mb-3">
                   <input
                     name="email"
                     type="email"
                     class="email increase-form"
-                    placeholder="you@domain.com"
+                    placeholder="Email address"
                     required
                   />
                 </div>
 
-                <div class="col-lg-12 mb-4">
+                <div class="col-lg-12 mb-3">
                   <input
                     name="subject"
                     type="text"
@@ -563,11 +573,11 @@
                   class=""
                   id="exampleFormControlTextarea1"
                   rows="6"
-                  placeholder="Enter Message Here..."
+                  placeholder="Write Message..."
                 ></textarea>
               </div>
               <div
-                class="mb-4 mx-auto submit"
+                class="mb-3 mx-auto submit"
                 data-aos="fade-right"
                 data-aos-delay="550"
               >
@@ -580,8 +590,19 @@
             data-aos="fade-up"
             data-aos-delay="500"
           >
+            <em
+              class="mb-3"
+              style="
+                background-color: lightgreen;
+                padding: 0.2rem;
+                font-size: 0.8rem;
+              "
+            >
+              Tip - click on email address to send a mail or phone number to
+              call</em
+            >
             <!-- email -->
-            <div class="col- text-center d-flex mb-4">
+            <div class="col- text-center d-flex mt-4">
               <div><i class="fa fa-envelope"></i></div>
               <div class="text-left ml-3">
                 <h5>Email</h5>
@@ -624,7 +645,11 @@
           class="row text-center d-flex flex-column justify-content-center align-items-center"
         >
           <div class="col-lg-6 text-center logo mb-3">
-            <img class="footer-logo" src="/images/logo-light.svg" alt="" />
+            <img
+              class="footer-logo"
+              src="/images/logo-light.svg"
+              alt="Nathan Logo"
+            />
           </div>
           <div class="col">
             <p class="" id="footer">
@@ -637,7 +662,7 @@
               </a>
             </p>
             <p class="copy">
-              &copy; 2020 Nathan Jonah. Few rights reserved<span
+              &copy; 2021, Few rights reserved<span
                 style="color: var(--secondary_); font-size: 2rem"
                 >.</span
               >
@@ -654,7 +679,7 @@
         data-aos="fade-in"
         data-aos-once="false"
         data-aos-mirror="true"
-        ><img src="./images/scroll_top.svg" alt=""
+        ><img src="./images/scroll_top.svg" alt="scroll_top"
       /></a>
     </div>
 
