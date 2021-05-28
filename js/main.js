@@ -5,11 +5,11 @@ window.addEventListener("DOMContentLoaded", function () {
 
   $(function () {
     AOS.init({
-      duration: 900,
+      duration: 700,
       animatedClassName: "aos-animate",
       once: true,
       initClassName: "aos-init",
-      easing: " ease-in-out",
+      easing: " ease-in-out-back",
     });
   });
 

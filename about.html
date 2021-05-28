@@ -23,7 +23,7 @@
 
     <meta
       name="keywords"
-      content=" Nathan Jonah,  Jumntan, Jumns,  Frontend Developer, Frontend Developer in Nigeria"
+      content=" Nathan, Jonah,  Jumntan, Jumns,  Frontend , Developer, Nigeria"
     />
 
     <meta name="robots" content="index, follow" />
@@ -32,11 +32,10 @@
     <title>Nathan Jonah &mdash; Frontend Developer</title>
     <!-- main css -->
     <link rel="stylesheet" href="./css/main.css" />
-    <!-- bootstrap css -->
     <!-- icon -->
     <link rel="icon" href="./images/J-logo.png" type="image/icon-x" />
     <!-- aos cdn -->
-    <link rel="stylesheet" href="./aos/aos.css" />
+    <!-- <link rel="stylesheet" href="./aos/aos.css" /> -->
     <!--   bootstrap cdn -->
     <link
       rel="stylesheet"
@@ -44,6 +43,10 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
+
+        <!-- aos cdn -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- fontawesome cdn -->
     <!-- <link rel="stylesheet" href="fontawesome/css/all.css" /> -->
 
@@ -55,8 +58,19 @@
     />
 
     <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&family=Ubuntu:wght@300&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Itim&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -102,14 +116,14 @@
         <a
           class="hire-btn"
           href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
-          target="_blank"
+          rel="noopener" target="_blank"
           >Hire Me <i class="fa fa-exclamation"></i
         ></a>
       </nav>
     </header>
 
     <!-- about -->
-
+<main>
     <section class="abt-img py-5 mt-5">
       <div class="container">
         <div class="row">
@@ -118,7 +132,7 @@
             data-aos="fade-up"
             data-aos-delay="300"
           >
-            <a href="./images/Nathan Jonah.jpg">
+            <a rel="noopener"  href="./images/Nathan Jonah.jpg" target="_blank">
               <img
                 src="./images/Nathan Jonah.jpg"
                 class="img-fluid img mx-auto"
@@ -131,30 +145,32 @@
             data-aos="fade-up"
             data-aos-delay="400"
           >
-            <h2 class="py-3">Who Am I? 🤓</h2>
-            <div class="bg-light rounded about">
-              <p>
-                Hi, I am Nathan Jonah, a frontend developer & a graphic designer
-                from <i class="fa fa-map-marker"></i>
-                Nigeria, West Africa.
-              </p>
-              <p>
-                I've learned (and still learning) and understood most of the
-                technologies that this profession requires, I've also
-                explored(and still exploring) it in different projects,
-                personally, via collaborations and contributions to open source
-                softwares (OSS). I'm pretty creative too, I promise.
-              </p>
-              <p>
-                I write and speak English fluently and I am emotionally
-                intellegent, working with me will be fun and a lot productive. I
-                am also open to collaborations.
-              </p>
-              <p>
-                What more could you look for in a professional website
-                developer? Send me that email before I'm taken away in a jiffy
-                ☺️.
-              </p>
+            <h1 class="py-3 abt-heading">Who Am I? 🤓</h1>
+            <div class="gradient">
+              <div class="bg-light rounded about">
+                <p>
+                  Hi 👋🏾, I am <span class="dev">Nathan Jonah</span>, a frontend
+                  developer 💻& a graphic designer from Nigeria 🇳🇬, West Africa.
+                </p>
+                <p>
+                  I've learned (and still learning) and understood most of the
+                  technologies that this profession requires, I've also
+                  explored(and still exploring) it in different projects,
+                  personally, via collaborations and contributions to open
+                  source softwares (OSS). I'm pretty
+                  <span class="dev">creative</span> too, I promise.
+                </p>
+                <p>
+                  I write 🖊️ and speak 🗣️ English fluently and I am emotionally
+                  intellegent, working with me will be fun and a lot productive.
+                  I am open to collaborations.
+                </p>
+                <p>
+                  What more could you look for in a frontend developer? Reach
+                  out to me and let's set the ball
+                  <span class="dev">rolling! </span>😉
+                </p>
+              </div>
             </div>
           </div>
 
@@ -163,7 +179,7 @@
             data-aos="fade-up"
             data-aos-delay="500"
           >
-            <h2 class="py-3 mt-5">Qualities 💎</h2>
+            <h1 class="py-3 mt-5 abt-heading">Qualities 💎</h1>
             <ul class="list-group list-group-flush qualities">
               <li class="list-group-item bg-light">
                 <i class="fa fa-check-circle"></i> Very Techie.
@@ -201,35 +217,33 @@
           <span class="cta-hire">
             <a
               href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
-              target="_blank"
-              class="text-white btn btn-block py-3"
-              >HIRE ME <i class="fa fa-paper-plane"></i></a
-          ></span>
+              rel="noopener" target="_blank"
+              class="btn btn-block py-3 text-uppercase"
+              >Let's Work ✈️</a
+            ></span
+          >
         </div>
       </div>
     </div>
-    <div class="cta-btn"></div>
 
     <!-- quick contact -->
-    <section class="px-1 bg-light" id="contact">
+    <div class="line"></div>
+    <section class="px-1" id="contact">
       <div class="container">
         <!-- heading starts -->
         <div class="row">
           <div class="col-lg-12 text-center">
-            <h4 class="heading-shadow" data-aos="zoom-in" data-aos-delay="500">
-              Contact
-            </h4>
-          </div>
-          <div class="container mb-4 position-relative">
-            <h2 class="heading-2" data-aos="zoom-in" data-aos-delay="500">
-              Contact
-            </h2>
-            <p
-              class="text-center text-capitalize"
-              style="font-family: 'Pacifico', cursive"
-            >
-              <i class="fa fa-circle"></i> Let's Connect
-            </p>
+            <div class="container mb-5 position-relative">
+              <h2 class="heading-1" data-aos="zoom-in" data-aos-delay="500">
+                Contact
+              </h2>
+              <p
+                class="text-center text-capitalize"
+                style="font-family: 'Caveat', cursive"
+              >
+                <i class="fa fa-circle"></i> Let's Connect
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -243,27 +257,27 @@
             data-aos-delay="500"
           >
             <div>
-              <a href="https://twitter.com/Mr_Jumns" target="_blank"
+              <a href="https://twitter.com/Mr_Jumns" rel="noopener" target="_blank"
                 ><i class="fab fa-twitter" title="Twitter"></i
               ></a>
             </div>
             <div>
               <a
                 href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
-                target="_blank"
+               rel="noopener"  target="_blank"
                 ><i class="fab fa-whatsapp" title="WhatsApp"></i
               ></a>
             </div>
             <div>
               <a
                 href="https://www.linkedin.com/in/nathan-jonah-1210801aa/"
-                target="_blank"
+                rel="noopener" target="_blank"
               >
                 <i class="fab fa-linkedin" title="Linkedin"></i
               ></a>
             </div>
             <div>
-              <a href="https://github.com/Jumns" target="_blank"
+              <a href="https://github.com/Jumns" rel="noopener" target="_blank"
                 ><i class="fab fa-github" title="Github"></i
               ></a>
             </div>
@@ -284,6 +298,7 @@
                     required
                   />
                 </div>
+
                 <div class="col-sm-12 col-md-6 mb-3">
                   <input
                     name="email"
@@ -310,7 +325,7 @@
                   class=""
                   id="exampleFormControlTextarea1"
                   rows="6"
-                  placeholder="Write Message..."
+                  placeholder="Write Message...🖊️"
                 ></textarea>
               </div>
               <div
@@ -318,7 +333,12 @@
                 data-aos="fade-right"
                 data-aos-delay="550"
               >
-                <input type="submit" value="Send" id="submit" />
+                <input
+                  type="submit"
+                  class="text-uppercase"
+                  value="Send"
+                  id="submit"
+                />
               </div>
             </form>
           </div>
@@ -344,7 +364,10 @@
               <div class="text-left ml-3">
                 <h5>Email:</h5>
                 <p class="text-muted">
-                  <a href="mailto: heisnathan@outlook.com " class="text-muted">
+                  <a rel="noopener"
+                    href="mailto: heisnathan@outlook.com "
+                    style="color: var(--secondary_)"
+                  >
                     heisnathan@outlook.com
                   </a>
                   <br />
@@ -360,7 +383,7 @@
               <div class="text-left ml-3">
                 <h5>Call:</h5>
                 <p class="text-muted">
-                  <a href="tel:+2348106706775" class="text-muted"
+                  <a rel="noopener" href="tel:+2348106706775" style="color: var(--secondary_)"
                     >(+234) 8106706775
                   </a>
                   <br />
@@ -379,7 +402,14 @@
     <section class="py-5 footer">
       <div class="container">
         <div
-          class="row text-center d-flex flex-column justify-content-center align-items-center"
+          class="
+            row
+            text-center
+            d-flex
+            flex-column
+            justify-content-center
+            align-items-center
+          "
         >
           <div class="col-lg-6 text-center logo mb-3">
             <img class="footer-logo" src="/images/logo-light.svg" alt="" />
@@ -390,7 +420,7 @@
               <i class="fa fa-heart" title="Love"></i> From 🇳🇬 By:
               <a
                 href="https://wa.me/2348106706775?text=Hi%20Nathan,%20I'm%20interested%20in%20working%20with%20you.%20"
-                target="_blank"
+               rel="noopener" target="_blank"
                 >Nathan Jonah
               </a>
             </p>
@@ -410,9 +440,10 @@
         ><img src="./images/scroll_top.svg" alt=""
       /></a>
     </div>
-    <script src="./js/jquery.js"></script>
+        <!-- jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./aos/aos.js"></script>
-    <!-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script> -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
