@@ -35,10 +35,6 @@ body {
       to(rgba(97, 97, 97, 0.2))
     ),
     url("/images/main-bg.png") center/cover no-repeat;
-  background: -o-linear-gradient(rgba(97, 97, 97, 0.2), rgba(97, 97, 97, 0.2)),
-    url("/images/main-bg.png") center/cover no-repeat;
-  background: linear-gradient(rgba(97, 97, 97, 0.2), rgba(97, 97, 97, 0.2)),
-    url("./images/main-bg.png") center/cover no-repeat;
   background-attachment: fixed;
   position: relative;
   line-height: 1.6;
@@ -75,12 +71,12 @@ body.overlay::before {
 .scroll {
   position: absolute;
   content: "";
-  top: 34rem;
+  top: 32rem;
   margin-left: 0;
   margin-right: 0;
   animation: move 1s infinite alternate;
   -webkit-animation: move 1s infinite alternate;
-  height: 45px;
+  height: 40px;
 }
 
 .scroll_top {
@@ -163,7 +159,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: var(--tertiary_);
 }
 
@@ -322,7 +318,6 @@ nav {
 
 /* =========== HERO SECTION ============ */
 #welcome-section {
-<<<<<<< HEAD
   background: -webkit-gradient(
       linear,
       left top,
@@ -331,17 +326,7 @@ nav {
       to(rgba(18, 18, 21, 0.888))
     ),
     url(/images/hero-bg.jpg) center/cover no-repeat;
-  background: -o-linear-gradient(
-      rgba(19, 19, 22, 0.888),
-      rgba(18, 18, 21, 0.888)
-    ),
-    url(/images/hero-bg.jpg) center/cover no-repeat;
-  background: linear-gradient(rgba(19, 19, 22, 0.888), rgba(18, 18, 21, 0.888)),
-    url(/images/hero-bg.jpg) center/cover no-repeat;
-=======
-  background: linear-gradient(rgba(19, 19, 22, 0.788), rgba(18, 18, 21, 0.739)),
-    url(./images/hero-bg.jpg) center/cover no-repeat;
->>>>>>> 7118b019794d8047abcbb44ce2c651ebf8172793
+
   height: 100vh;
 }
 
